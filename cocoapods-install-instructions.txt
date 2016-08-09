@@ -1,0 +1,7 @@
+1.	In terminal, paste 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"	to install homebrew.
+
+
+2.	Run 	brew install ruby	to get the latest version of ruby.
+
+
+3.	Run		sudo gem install cocoapods		to get cocoapods
