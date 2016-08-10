@@ -242,13 +242,16 @@
 					D6677B041D58D92400AFC975 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = QZNZ74KU34;
+						LastSwiftMigration = 0800;
 					};
 					D6677B181D58D92400AFC975 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D6677B041D58D92400AFC975;
 					};
 					D6677B231D58D92400AFC975 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D6677B041D58D92400AFC975;
 					};
 				};
@@ -581,6 +584,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sky.HelloWorldTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -596,6 +600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sky.HelloWorldTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -608,6 +613,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sky.HelloWorldTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldTest.app/HelloWorldTest";
 			};
 			name = Debug;
@@ -621,6 +627,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sky.HelloWorldTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldTest.app/HelloWorldTest";
 			};
 			name = Release;
@@ -633,6 +640,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sky.HelloWorldTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = HelloWorldTest;
 			};
 			name = Debug;
@@ -645,6 +653,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sky.HelloWorldTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = HelloWorldTest;
 			};
 			name = Release;
