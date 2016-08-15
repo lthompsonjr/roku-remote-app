@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F5DAEA91D61B3C600AA56DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */; };
+		9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */; };
+		9F5DAEAE1D61B3C600AA56DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */; };
+		9F5DAEB11D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAF1D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld */; };
+		9F5DAEB31D61B3C600AA56DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DAEB21D61B3C600AA56DF /* Assets.xcassets */; };
+		9F5DAEB61D61B3C600AA56DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DAEB41D61B3C600AA56DF /* LaunchScreen.storyboard */; };
+		9F5DAEC11D61B3C600AA56DF /* RokuRemoteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEC01D61B3C600AA56DF /* RokuRemoteAppTests.swift */; };
+		9F5DAECC1D61B3C600AA56DF /* RokuRemoteAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAECB1D61B3C600AA56DF /* RokuRemoteAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F5DAEBD1D61B3C600AA56DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F5DAE9D1D61B3C600AA56DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F5DAEA41D61B3C600AA56DF;
+			remoteInfo = RokuRemoteApp;
+		};
+		9F5DAEC81D61B3C600AA56DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F5DAE9D1D61B3C600AA56DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F5DAEA41D61B3C600AA56DF;
+			remoteInfo = RokuRemoteApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F5DAEA51D61B3C600AA56DF /* RokuRemoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RokuRemoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F5DAEAD1D61B3C600AA56DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F5DAEB01D61B3C600AA56DF /* RokuRemoteApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RokuRemoteApp.xcdatamodel; sourceTree = "<group>"; };
+		9F5DAEB21D61B3C600AA56DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F5DAEB51D61B3C600AA56DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F5DAEB71D61B3C600AA56DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F5DAEBC1D61B3C600AA56DF /* RokuRemoteAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RokuRemoteAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5DAEC01D61B3C600AA56DF /* RokuRemoteAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokuRemoteAppTests.swift; sourceTree = "<group>"; };
+		9F5DAEC21D61B3C600AA56DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F5DAEC71D61B3C600AA56DF /* RokuRemoteAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RokuRemoteAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5DAECB1D61B3C600AA56DF /* RokuRemoteAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokuRemoteAppUITests.swift; sourceTree = "<group>"; };
+		9F5DAECD1D61B3C600AA56DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F5DAEA21D61B3C600AA56DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5DAEB91D61B3C600AA56DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5DAEC41D61B3C600AA56DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F5DAE9C1D61B3C600AA56DF = {
+			isa = PBXGroup;
+			children = (
+				9F5DAEA71D61B3C600AA56DF /* RokuRemoteApp */,
+				9F5DAEBF1D61B3C600AA56DF /* RokuRemoteAppTests */,
+				9F5DAECA1D61B3C600AA56DF /* RokuRemoteAppUITests */,
+				9F5DAEA61D61B3C600AA56DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F5DAEA61D61B3C600AA56DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F5DAEA51D61B3C600AA56DF /* RokuRemoteApp.app */,
+				9F5DAEBC1D61B3C600AA56DF /* RokuRemoteAppTests.xctest */,
+				9F5DAEC71D61B3C600AA56DF /* RokuRemoteAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F5DAEA71D61B3C600AA56DF /* RokuRemoteApp */ = {
+			isa = PBXGroup;
+			children = (
+				9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */,
+				9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */,
+				9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */,
+				9F5DAEB21D61B3C600AA56DF /* Assets.xcassets */,
+				9F5DAEB41D61B3C600AA56DF /* LaunchScreen.storyboard */,
+				9F5DAEB71D61B3C600AA56DF /* Info.plist */,
+				9F5DAEAF1D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld */,
+			);
+			path = RokuRemoteApp;
+			sourceTree = "<group>";
+		};
+		9F5DAEBF1D61B3C600AA56DF /* RokuRemoteAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5DAEC01D61B3C600AA56DF /* RokuRemoteAppTests.swift */,
+				9F5DAEC21D61B3C600AA56DF /* Info.plist */,
+			);
+			path = RokuRemoteAppTests;
+			sourceTree = "<group>";
+		};
+		9F5DAECA1D61B3C600AA56DF /* RokuRemoteAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5DAECB1D61B3C600AA56DF /* RokuRemoteAppUITests.swift */,
+				9F5DAECD1D61B3C600AA56DF /* Info.plist */,
+			);
+			path = RokuRemoteAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F5DAEA41D61B3C600AA56DF /* RokuRemoteApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5DAED01D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteApp" */;
+			buildPhases = (
+				9F5DAEA11D61B3C600AA56DF /* Sources */,
+				9F5DAEA21D61B3C600AA56DF /* Frameworks */,
+				9F5DAEA31D61B3C600AA56DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RokuRemoteApp;
+			productName = RokuRemoteApp;
+			productReference = 9F5DAEA51D61B3C600AA56DF /* RokuRemoteApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F5DAEBB1D61B3C600AA56DF /* RokuRemoteAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5DAED31D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteAppTests" */;
+			buildPhases = (
+				9F5DAEB81D61B3C600AA56DF /* Sources */,
+				9F5DAEB91D61B3C600AA56DF /* Frameworks */,
+				9F5DAEBA1D61B3C600AA56DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F5DAEBE1D61B3C600AA56DF /* PBXTargetDependency */,
+			);
+			name = RokuRemoteAppTests;
+			productName = RokuRemoteAppTests;
+			productReference = 9F5DAEBC1D61B3C600AA56DF /* RokuRemoteAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F5DAEC61D61B3C600AA56DF /* RokuRemoteAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5DAED61D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteAppUITests" */;
+			buildPhases = (
+				9F5DAEC31D61B3C600AA56DF /* Sources */,
+				9F5DAEC41D61B3C600AA56DF /* Frameworks */,
+				9F5DAEC51D61B3C600AA56DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F5DAEC91D61B3C600AA56DF /* PBXTargetDependency */,
+			);
+			name = RokuRemoteAppUITests;
+			productName = RokuRemoteAppUITests;
+			productReference = 9F5DAEC71D61B3C600AA56DF /* RokuRemoteAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F5DAE9D1D61B3C600AA56DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Thuringer, Nicholas (Associate Software Developer)";
+				TargetAttributes = {
+					9F5DAEA41D61B3C600AA56DF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9F5DAEBB1D61B3C600AA56DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9F5DAEA41D61B3C600AA56DF;
+					};
+					9F5DAEC61D61B3C600AA56DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9F5DAEA41D61B3C600AA56DF;
+					};
+				};
+			};
+			buildConfigurationList = 9F5DAEA01D61B3C600AA56DF /* Build configuration list for PBXProject "RokuRemoteApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F5DAE9C1D61B3C600AA56DF;
+			productRefGroup = 9F5DAEA61D61B3C600AA56DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F5DAEA41D61B3C600AA56DF /* RokuRemoteApp */,
+				9F5DAEBB1D61B3C600AA56DF /* RokuRemoteAppTests */,
+				9F5DAEC61D61B3C600AA56DF /* RokuRemoteAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F5DAEA31D61B3C600AA56DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5DAEB61D61B3C600AA56DF /* LaunchScreen.storyboard in Resources */,
+				9F5DAEB31D61B3C600AA56DF /* Assets.xcassets in Resources */,
+				9F5DAEAE1D61B3C600AA56DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5DAEBA1D61B3C600AA56DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5DAEC51D61B3C600AA56DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F5DAEA11D61B3C600AA56DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5DAEB11D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld in Sources */,
+				9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */,
+				9F5DAEA91D61B3C600AA56DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5DAEB81D61B3C600AA56DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5DAEC11D61B3C600AA56DF /* RokuRemoteAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5DAEC31D61B3C600AA56DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5DAECC1D61B3C600AA56DF /* RokuRemoteAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F5DAEBE1D61B3C600AA56DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F5DAEA41D61B3C600AA56DF /* RokuRemoteApp */;
+			targetProxy = 9F5DAEBD1D61B3C600AA56DF /* PBXContainerItemProxy */;
+		};
+		9F5DAEC91D61B3C600AA56DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F5DAEA41D61B3C600AA56DF /* RokuRemoteApp */;
+			targetProxy = 9F5DAEC81D61B3C600AA56DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F5DAEAD1D61B3C600AA56DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F5DAEB41D61B3C600AA56DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F5DAEB51D61B3C600AA56DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F5DAECE1D61B3C600AA56DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F5DAECF1D61B3C600AA56DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F5DAED11D61B3C600AA56DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RokuRemoteApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sky.RokuRemoteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F5DAED21D61B3C600AA56DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RokuRemoteApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sky.RokuRemoteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9F5DAED41D61B3C600AA56DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RokuRemoteAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sky.RokuRemoteAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RokuRemoteApp.app/RokuRemoteApp";
+			};
+			name = Debug;
+		};
+		9F5DAED51D61B3C600AA56DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RokuRemoteAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sky.RokuRemoteAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RokuRemoteApp.app/RokuRemoteApp";
+			};
+			name = Release;
+		};
+		9F5DAED71D61B3C600AA56DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RokuRemoteAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sky.RokuRemoteAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RokuRemoteApp;
+			};
+			name = Debug;
+		};
+		9F5DAED81D61B3C600AA56DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RokuRemoteAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sky.RokuRemoteAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RokuRemoteApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F5DAEA01D61B3C600AA56DF /* Build configuration list for PBXProject "RokuRemoteApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5DAECE1D61B3C600AA56DF /* Debug */,
+				9F5DAECF1D61B3C600AA56DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5DAED01D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5DAED11D61B3C600AA56DF /* Debug */,
+				9F5DAED21D61B3C600AA56DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F5DAED31D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5DAED41D61B3C600AA56DF /* Debug */,
+				9F5DAED51D61B3C600AA56DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F5DAED61D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5DAED71D61B3C600AA56DF /* Debug */,
+				9F5DAED81D61B3C600AA56DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9F5DAEAF1D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9F5DAEB01D61B3C600AA56DF /* RokuRemoteApp.xcdatamodel */,
+			);
+			currentVersion = 9F5DAEB01D61B3C600AA56DF /* RokuRemoteApp.xcdatamodel */;
+			path = RokuRemoteApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9F5DAE9D1D61B3C600AA56DF /* Project object */;
+}
