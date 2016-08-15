@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol  HttpResponseDelegate {
+    func didReceiveXMLInfo(data: NSData)
+}

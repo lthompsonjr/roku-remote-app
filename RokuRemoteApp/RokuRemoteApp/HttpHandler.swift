@@ -8,17 +8,34 @@
 
 import Foundation
 
+extension NSURLSessionDataTask: URLSessionDataTaskProtocol { }
+
+extension NSURLSession: URLSessionProtocol
+{
+    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
+        -> URLSessionDataTaskProtocol
+    {
+        return (dataTaskWithURL(url, completionHandler: completionHandler)
+            as NSURLSessionDataTask) as URLSessionDataTaskProtocol
+    }
+}
+
+typealias HTTPResult = (NSData?, ErrorType?) -> Void
 
 public class HttpHandler
 {
     
     let deviceInfoPath: String = "/query/device-info"
     var url: String!
+    var responseDelegate: HttpResponseDelegate!
+    private let session: URLSessionProtocol
     
-    init(url: String)
+    init(session: URLSessionProtocol = NSURLSession.sharedSession(), url: String)
     {
+        self.session = session
         self.url = url
     }
+    
     
     public func callGetInfoEndPoint()
     {
@@ -33,9 +50,14 @@ public class HttpHandler
             print("Response: \(response)")
             let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
             print(String(strData))
-            //self.responseDelegate.didReceiveXMLInfo((strData?.dataUsingEncoding(NSUTF8StringEncoding))!)
+            self.responseDelegate.didReceiveXMLInfo((strData?.dataUsingEncoding(NSUTF8StringEncoding))!)
         })
         
+        task.resume()
+    }
+    
+    func get(url: NSURL, completion: HTTPResult) {
+        let task = session.dataTaskWithURL(url) { (_, _, _) -> Void in }
         task.resume()
     }
     

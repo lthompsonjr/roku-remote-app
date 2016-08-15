@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+typealias DataTaskResult = (NSData?, NSURLResponse?, NSError?) -> Void
+
+protocol URLSessionProtocol {
+    
+    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
+        -> URLSessionDataTaskProtocol
+    
+}

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+
+class MockURLSession: URLSessionProtocol {
+    var nextDataTask = MockURLSessionDataTask()
+    private (set) var lastURL: NSURL?
+    
+    func dataTaskWithURL(url: NSURL, completionHandler: DataTaskResult)
+        -> URLSessionDataTaskProtocol
+    {
+        lastURL = url
+        return nextDataTask
+    }
+}
