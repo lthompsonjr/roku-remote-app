@@ -1,27 +1,14 @@
 PODS:
-  - OHHTTPStubs (5.1.0):
-    - OHHTTPStubs/Default (= 5.1.0)
-  - OHHTTPStubs/Core (5.1.0)
-  - OHHTTPStubs/Default (5.1.0):
-    - OHHTTPStubs/Core
-    - OHHTTPStubs/JSON
-    - OHHTTPStubs/NSURLSession
-    - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (5.1.0):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (5.1.0):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (5.1.0)
-  - OHHTTPStubs/Swift (5.1.0):
-    - OHHTTPStubs/Core
+  - CocoaAsyncSocket (7.5.0):
+    - CocoaAsyncSocket/GCD (= 7.5.0)
+  - CocoaAsyncSocket/GCD (7.5.0)
 
 DEPENDENCIES:
-  - OHHTTPStubs
-  - OHHTTPStubs/Swift
+  - CocoaAsyncSocket (~> 7.5)
 
 SPEC CHECKSUMS:
-  OHHTTPStubs: 592f74439d2d72615115cf99a954237a3fbe26e5
+  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
 
-PODFILE CHECKSUM: 978de40828effb090e7a66d85025236157fb0c48
+PODFILE CHECKSUM: 5b089fc23a1f7f1dd17528ca19290f3ca47e7424
 
 COCOAPODS: 1.0.1

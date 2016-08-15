@@ -6,8 +6,9 @@ target 'RokuRemoteApp' do
   use_frameworks!
 
   # Pods for RokuRemoteApp
-  pod 'OHHTTPStubs'
-  pod 'OHHTTPStubs/Swift'
+  #pod 'OHHTTPStubs'
+  #pod 'OHHTTPStubs/Swift'
+  pod 'CocoaAsyncSocket', '~> 7.5'
 
   target 'RokuRemoteAppTests' do
     inherit! :search_paths

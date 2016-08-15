@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2D3EB26A9B8A2C11BC1766D5 /* Pods_RokuRemoteAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444E77D3830DC7D9B36B3C29 /* Pods_RokuRemoteAppUITests.framework */; };
 		36C9EA9F947EA83C0C7DA325 /* Pods_RokuRemoteAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78B3743B94D0A8CA17D2A49 /* Pods_RokuRemoteAppTests.framework */; };
+		4C41590E1D62197E0040A97B /* SocketConnectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41590B1D62197E0040A97B /* SocketConnectionFactory.swift */; };
+		4C41590F1D62197E0040A97B /* SocketConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41590C1D62197E0040A97B /* SocketConnectionProtocol.swift */; };
+		4C4159101D62197E0040A97B /* UDPSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41590D1D62197E0040A97B /* UDPSocketConnection.swift */; };
+		4C41591A1D621FCB0040A97B /* SocketConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4159181D621FCB0040A97B /* SocketConnectionTests.swift */; };
 		6D9DB1A5E43094BFD165BB77 /* Pods_RokuRemoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970224EDAD30D41D6CD86165 /* Pods_RokuRemoteApp.framework */; };
 		9F3633091D62043E006A2656 /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3633081D62043E006A2656 /* HttpHandler.swift */; };
 		9F36330A1D62043E006A2656 /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3633081D62043E006A2656 /* HttpHandler.swift */; };
@@ -42,6 +46,10 @@
 
 /* Begin PBXFileReference section */
 		444E77D3830DC7D9B36B3C29 /* Pods_RokuRemoteAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C41590B1D62197E0040A97B /* SocketConnectionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnectionFactory.swift; sourceTree = "<group>"; };
+		4C41590C1D62197E0040A97B /* SocketConnectionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnectionProtocol.swift; sourceTree = "<group>"; };
+		4C41590D1D62197E0040A97B /* UDPSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPSocketConnection.swift; sourceTree = "<group>"; };
+		4C4159181D621FCB0040A97B /* SocketConnectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnectionTests.swift; sourceTree = "<group>"; };
 		561A9EA7E7A588690943FFBE /* Pods-RokuRemoteAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteAppTests/Pods-RokuRemoteAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		708E6C81D9F3DC0DF15E5243 /* Pods-RokuRemoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp.release.xcconfig"; sourceTree = "<group>"; };
 		94DF6F9E9297FB0DFC5B0AD2 /* Pods-RokuRemoteAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteAppUITests/Pods-RokuRemoteAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +139,9 @@
 		9F5DAEA71D61B3C600AA56DF /* RokuRemoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C41590B1D62197E0040A97B /* SocketConnectionFactory.swift */,
+				4C41590C1D62197E0040A97B /* SocketConnectionProtocol.swift */,
+				4C41590D1D62197E0040A97B /* UDPSocketConnection.swift */,
 				9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */,
 				9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */,
 				9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */,
@@ -149,6 +160,7 @@
 				9F5DAEC01D61B3C600AA56DF /* RokuRemoteAppTests.swift */,
 				9F5DAEC21D61B3C600AA56DF /* Info.plist */,
 				9F36330B1D62049F006A2656 /* HttpHandlerTests.swift */,
+				4C4159181D621FCB0040A97B /* SocketConnectionTests.swift */,
 			);
 			path = RokuRemoteAppTests;
 			sourceTree = "<group>";
@@ -440,7 +452,10 @@
 			files = (
 				9F5DAEB11D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld in Sources */,
 				9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */,
+				4C41590F1D62197E0040A97B /* SocketConnectionProtocol.swift in Sources */,
 				9F3633091D62043E006A2656 /* HttpHandler.swift in Sources */,
+				4C41590E1D62197E0040A97B /* SocketConnectionFactory.swift in Sources */,
+				4C4159101D62197E0040A97B /* UDPSocketConnection.swift in Sources */,
 				9F5DAEA91D61B3C600AA56DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +466,7 @@
 			files = (
 				9F36330A1D62043E006A2656 /* HttpHandler.swift in Sources */,
 				9F36330C1D62049F006A2656 /* HttpHandlerTests.swift in Sources */,
+				4C41591A1D621FCB0040A97B /* SocketConnectionTests.swift in Sources */,
 				9F5DAEC11D61B3C600AA56DF /* RokuRemoteAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
