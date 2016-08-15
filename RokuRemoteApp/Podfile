@@ -1,0 +1,23 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'RokuRemoteApp' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for RokuRemoteApp
+  #pod 'OHHTTPStubs'
+  #pod 'OHHTTPStubs/Swift'
+  pod 'CocoaAsyncSocket', '~> 7.5'
+
+  target 'RokuRemoteAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'RokuRemoteAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
