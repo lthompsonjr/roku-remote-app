@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F10E6111D62070F0066EF5F /* DatabaseTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6101D62070F0066EF5F /* DatabaseTesting.swift */; };
+		2F10E6141D620D490066EF5F /* IDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6131D620D490066EF5F /* IDatabaseConnector.swift */; };
+		2F10E61D1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E61B1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift */; };
+		2F10E61E1D6211A70066EF5F /* RokuObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E61C1D6211A70066EF5F /* RokuObject.swift */; };
+		2F10E61F1D6213100066EF5F /* RokuObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E61C1D6211A70066EF5F /* RokuObject.swift */; };
+		2F10E6211D6213D70066EF5F /* DatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6201D6213D70066EF5F /* DatabaseConnector.swift */; };
+		2F10E6231D6214160066EF5F /* StubDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6221D6214160066EF5F /* StubDatabaseConnector.swift */; };
+		2F10E6241D6215730066EF5F /* StubDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6221D6214160066EF5F /* StubDatabaseConnector.swift */; };
+		2F6FE7B81D62199A004C3C96 /* IDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6131D620D490066EF5F /* IDatabaseConnector.swift */; };
 		9F5DAEA91D61B3C600AA56DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */; };
 		9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */; };
 		9F5DAEAE1D61B3C600AA56DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */; };
@@ -35,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F10E6101D62070F0066EF5F /* DatabaseTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseTesting.swift; sourceTree = "<group>"; };
+		2F10E6131D620D490066EF5F /* IDatabaseConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDatabaseConnector.swift; sourceTree = "<group>"; };
+		2F10E61B1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RokuObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2F10E61C1D6211A70066EF5F /* RokuObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RokuObject.swift; sourceTree = "<group>"; };
+		2F10E6201D6213D70066EF5F /* DatabaseConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConnector.swift; sourceTree = "<group>"; };
+		2F10E6221D6214160066EF5F /* StubDatabaseConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubDatabaseConnector.swift; sourceTree = "<group>"; };
 		9F5DAEA51D61B3C600AA56DF /* RokuRemoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RokuRemoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F10E6121D620D030066EF5F /* DatabaseConnector */ = {
+			isa = PBXGroup;
+			children = (
+				2F10E6131D620D490066EF5F /* IDatabaseConnector.swift */,
+				2F10E6201D6213D70066EF5F /* DatabaseConnector.swift */,
+				2F10E6221D6214160066EF5F /* StubDatabaseConnector.swift */,
+			);
+			name = DatabaseConnector;
+			sourceTree = "<group>";
+		};
 		9F5DAE9C1D61B3C600AA56DF = {
 			isa = PBXGroup;
 			children = (
+				2F10E61B1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift */,
+				2F10E61C1D6211A70066EF5F /* RokuObject.swift */,
 				9F5DAEA71D61B3C600AA56DF /* RokuRemoteApp */,
 				9F5DAEBF1D61B3C600AA56DF /* RokuRemoteAppTests */,
 				9F5DAECA1D61B3C600AA56DF /* RokuRemoteAppUITests */,
@@ -99,6 +126,7 @@
 		9F5DAEA71D61B3C600AA56DF /* RokuRemoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				2F10E6121D620D030066EF5F /* DatabaseConnector */,
 				9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */,
 				9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */,
 				9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */,
@@ -115,6 +143,7 @@
 			children = (
 				9F5DAEC01D61B3C600AA56DF /* RokuRemoteAppTests.swift */,
 				9F5DAEC21D61B3C600AA56DF /* Info.plist */,
+				2F10E6101D62070F0066EF5F /* DatabaseTesting.swift */,
 			);
 			path = RokuRemoteAppTests;
 			sourceTree = "<group>";
@@ -261,7 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5DAEB11D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld in Sources */,
+				2F10E6141D620D490066EF5F /* IDatabaseConnector.swift in Sources */,
+				2F10E6211D6213D70066EF5F /* DatabaseConnector.swift in Sources */,
 				9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */,
+				2F10E6231D6214160066EF5F /* StubDatabaseConnector.swift in Sources */,
+				2F10E61E1D6211A70066EF5F /* RokuObject.swift in Sources */,
+				2F10E61D1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift in Sources */,
 				9F5DAEA91D61B3C600AA56DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F10E6241D6215730066EF5F /* StubDatabaseConnector.swift in Sources */,
+				2F10E61F1D6213100066EF5F /* RokuObject.swift in Sources */,
+				2F6FE7B81D62199A004C3C96 /* IDatabaseConnector.swift in Sources */,
 				9F5DAEC11D61B3C600AA56DF /* RokuRemoteAppTests.swift in Sources */,
+				2F10E6111D62070F0066EF5F /* DatabaseTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RokuRemoteApp/Info.plist;
@@ -411,6 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Sky.RokuRemoteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -418,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RokuRemoteApp/Info.plist;
