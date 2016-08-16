@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F10E6111D62070F0066EF5F /* DatabaseTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6101D62070F0066EF5F /* DatabaseTesting.swift */; };
-		2F10E6141D620D490066EF5F /* IDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6131D620D490066EF5F /* IDatabaseConnector.swift */; };
-		2F10E61D1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E61B1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift */; };
-		2F10E61E1D6211A70066EF5F /* RokuObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E61C1D6211A70066EF5F /* RokuObject.swift */; };
-		2F10E61F1D6213100066EF5F /* RokuObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E61C1D6211A70066EF5F /* RokuObject.swift */; };
-		2F10E6211D6213D70066EF5F /* DatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6201D6213D70066EF5F /* DatabaseConnector.swift */; };
-		2F10E6231D6214160066EF5F /* StubDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6221D6214160066EF5F /* StubDatabaseConnector.swift */; };
-		2F10E6241D6215730066EF5F /* StubDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6221D6214160066EF5F /* StubDatabaseConnector.swift */; };
-		2F6FE7B81D62199A004C3C96 /* IDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10E6131D620D490066EF5F /* IDatabaseConnector.swift */; };
+		2D3EB26A9B8A2C11BC1766D5 /* Pods_RokuRemoteAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444E77D3830DC7D9B36B3C29 /* Pods_RokuRemoteAppUITests.framework */; };
+		36C9EA9F947EA83C0C7DA325 /* Pods_RokuRemoteAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78B3743B94D0A8CA17D2A49 /* Pods_RokuRemoteAppTests.framework */; };
+		4C41590E1D62197E0040A97B /* SocketConnectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41590B1D62197E0040A97B /* SocketConnectionFactory.swift */; };
+		4C41590F1D62197E0040A97B /* SocketConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41590C1D62197E0040A97B /* SocketConnectionProtocol.swift */; };
+		4C4159101D62197E0040A97B /* UDPSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41590D1D62197E0040A97B /* UDPSocketConnection.swift */; };
+		4C41591A1D621FCB0040A97B /* SocketConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4159181D621FCB0040A97B /* SocketConnectionTests.swift */; };
+		6D9DB1A5E43094BFD165BB77 /* Pods_RokuRemoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970224EDAD30D41D6CD86165 /* Pods_RokuRemoteApp.framework */; };
+		9F3633091D62043E006A2656 /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3633081D62043E006A2656 /* HttpHandler.swift */; };
+		9F36330A1D62043E006A2656 /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3633081D62043E006A2656 /* HttpHandler.swift */; };
+		9F36330C1D62049F006A2656 /* HttpHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36330B1D62049F006A2656 /* HttpHandlerTests.swift */; };
 		9F5DAEA91D61B3C600AA56DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */; };
 		9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */; };
 		9F5DAEAE1D61B3C600AA56DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */; };
@@ -44,12 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F10E6101D62070F0066EF5F /* DatabaseTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseTesting.swift; sourceTree = "<group>"; };
-		2F10E6131D620D490066EF5F /* IDatabaseConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDatabaseConnector.swift; sourceTree = "<group>"; };
-		2F10E61B1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RokuObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		2F10E61C1D6211A70066EF5F /* RokuObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RokuObject.swift; sourceTree = "<group>"; };
-		2F10E6201D6213D70066EF5F /* DatabaseConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConnector.swift; sourceTree = "<group>"; };
-		2F10E6221D6214160066EF5F /* StubDatabaseConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubDatabaseConnector.swift; sourceTree = "<group>"; };
+		444E77D3830DC7D9B36B3C29 /* Pods_RokuRemoteAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C41590B1D62197E0040A97B /* SocketConnectionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnectionFactory.swift; sourceTree = "<group>"; };
+		4C41590C1D62197E0040A97B /* SocketConnectionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnectionProtocol.swift; sourceTree = "<group>"; };
+		4C41590D1D62197E0040A97B /* UDPSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPSocketConnection.swift; sourceTree = "<group>"; };
+		4C4159181D621FCB0040A97B /* SocketConnectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnectionTests.swift; sourceTree = "<group>"; };
+		561A9EA7E7A588690943FFBE /* Pods-RokuRemoteAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteAppTests/Pods-RokuRemoteAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		708E6C81D9F3DC0DF15E5243 /* Pods-RokuRemoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp.release.xcconfig"; sourceTree = "<group>"; };
+		94DF6F9E9297FB0DFC5B0AD2 /* Pods-RokuRemoteAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteAppUITests/Pods-RokuRemoteAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		970224EDAD30D41D6CD86165 /* Pods_RokuRemoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E71CD0AB898282AF830F802 /* Pods-RokuRemoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9F3633081D62043E006A2656 /* HttpHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHandler.swift; sourceTree = "<group>"; };
+		9F36330B1D62049F006A2656 /* HttpHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHandlerTests.swift; sourceTree = "<group>"; };
 		9F5DAEA51D61B3C600AA56DF /* RokuRemoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RokuRemoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +71,9 @@
 		9F5DAEC71D61B3C600AA56DF /* RokuRemoteAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RokuRemoteAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5DAECB1D61B3C600AA56DF /* RokuRemoteAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokuRemoteAppUITests.swift; sourceTree = "<group>"; };
 		9F5DAECD1D61B3C600AA56DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E8216D9E4E2D719EA2D24B /* Pods-RokuRemoteAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteAppTests/Pods-RokuRemoteAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E78B3743B94D0A8CA17D2A49 /* Pods_RokuRemoteAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F266353BEC6614D4217E22 /* Pods-RokuRemoteAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteAppUITests/Pods-RokuRemoteAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9DB1A5E43094BFD165BB77 /* Pods_RokuRemoteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C9EA9F947EA83C0C7DA325 /* Pods_RokuRemoteAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,31 +97,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3EB26A9B8A2C11BC1766D5 /* Pods_RokuRemoteAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F10E6121D620D030066EF5F /* DatabaseConnector */ = {
+		874DD6B406A216319BD7ACFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F10E6131D620D490066EF5F /* IDatabaseConnector.swift */,
-				2F10E6201D6213D70066EF5F /* DatabaseConnector.swift */,
-				2F10E6221D6214160066EF5F /* StubDatabaseConnector.swift */,
+				970224EDAD30D41D6CD86165 /* Pods_RokuRemoteApp.framework */,
+				E78B3743B94D0A8CA17D2A49 /* Pods_RokuRemoteAppTests.framework */,
+				444E77D3830DC7D9B36B3C29 /* Pods_RokuRemoteAppUITests.framework */,
 			);
-			name = DatabaseConnector;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9F5DAE9C1D61B3C600AA56DF = {
 			isa = PBXGroup;
 			children = (
-				2F10E61B1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift */,
-				2F10E61C1D6211A70066EF5F /* RokuObject.swift */,
 				9F5DAEA71D61B3C600AA56DF /* RokuRemoteApp */,
 				9F5DAEBF1D61B3C600AA56DF /* RokuRemoteAppTests */,
 				9F5DAECA1D61B3C600AA56DF /* RokuRemoteAppUITests */,
 				9F5DAEA61D61B3C600AA56DF /* Products */,
+				D3A2038E1F270302D77F52D6 /* Pods */,
+				874DD6B406A216319BD7ACFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,7 +139,9 @@
 		9F5DAEA71D61B3C600AA56DF /* RokuRemoteApp */ = {
 			isa = PBXGroup;
 			children = (
-				2F10E6121D620D030066EF5F /* DatabaseConnector */,
+				4C41590B1D62197E0040A97B /* SocketConnectionFactory.swift */,
+				4C41590C1D62197E0040A97B /* SocketConnectionProtocol.swift */,
+				4C41590D1D62197E0040A97B /* UDPSocketConnection.swift */,
 				9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */,
 				9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */,
 				9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */,
@@ -134,6 +149,7 @@
 				9F5DAEB41D61B3C600AA56DF /* LaunchScreen.storyboard */,
 				9F5DAEB71D61B3C600AA56DF /* Info.plist */,
 				9F5DAEAF1D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld */,
+				9F3633081D62043E006A2656 /* HttpHandler.swift */,
 			);
 			path = RokuRemoteApp;
 			sourceTree = "<group>";
@@ -143,7 +159,8 @@
 			children = (
 				9F5DAEC01D61B3C600AA56DF /* RokuRemoteAppTests.swift */,
 				9F5DAEC21D61B3C600AA56DF /* Info.plist */,
-				2F10E6101D62070F0066EF5F /* DatabaseTesting.swift */,
+				9F36330B1D62049F006A2656 /* HttpHandlerTests.swift */,
+				4C4159181D621FCB0040A97B /* SocketConnectionTests.swift */,
 			);
 			path = RokuRemoteAppTests;
 			sourceTree = "<group>";
@@ -157,6 +174,19 @@
 			path = RokuRemoteAppUITests;
 			sourceTree = "<group>";
 		};
+		D3A2038E1F270302D77F52D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E71CD0AB898282AF830F802 /* Pods-RokuRemoteApp.debug.xcconfig */,
+				708E6C81D9F3DC0DF15E5243 /* Pods-RokuRemoteApp.release.xcconfig */,
+				E4E8216D9E4E2D719EA2D24B /* Pods-RokuRemoteAppTests.debug.xcconfig */,
+				561A9EA7E7A588690943FFBE /* Pods-RokuRemoteAppTests.release.xcconfig */,
+				E8F266353BEC6614D4217E22 /* Pods-RokuRemoteAppUITests.debug.xcconfig */,
+				94DF6F9E9297FB0DFC5B0AD2 /* Pods-RokuRemoteAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F5DAED01D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteApp" */;
 			buildPhases = (
+				AB6AD24802CBEB85649D3834 /* [CP] Check Pods Manifest.lock */,
 				9F5DAEA11D61B3C600AA56DF /* Sources */,
 				9F5DAEA21D61B3C600AA56DF /* Frameworks */,
 				9F5DAEA31D61B3C600AA56DF /* Resources */,
+				6481170E82792B4F89EDDE2B /* [CP] Embed Pods Frameworks */,
+				FC804BDD087BE92885EA7783 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F5DAED31D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteAppTests" */;
 			buildPhases = (
+				A45934ECBF0AB24698D16B8C /* [CP] Check Pods Manifest.lock */,
 				9F5DAEB81D61B3C600AA56DF /* Sources */,
 				9F5DAEB91D61B3C600AA56DF /* Frameworks */,
 				9F5DAEBA1D61B3C600AA56DF /* Resources */,
+				EE761ED5F67D2848006F066C /* [CP] Embed Pods Frameworks */,
+				700505F0082A3434A425C32E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F5DAED61D61B3C600AA56DF /* Build configuration list for PBXNativeTarget "RokuRemoteAppUITests" */;
 			buildPhases = (
+				A837CA0AD272E1CE41AABAC7 /* [CP] Check Pods Manifest.lock */,
 				9F5DAEC31D61B3C600AA56DF /* Sources */,
 				9F5DAEC41D61B3C600AA56DF /* Frameworks */,
 				9F5DAEC51D61B3C600AA56DF /* Resources */,
+				ED933F555105DF2AFB6B79D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,18 +322,140 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6481170E82792B4F89EDDE2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		700505F0082A3434A425C32E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RokuRemoteAppTests/Pods-RokuRemoteAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A45934ECBF0AB24698D16B8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A837CA0AD272E1CE41AABAC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6AD24802CBEB85649D3834 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED933F555105DF2AFB6B79D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RokuRemoteAppUITests/Pods-RokuRemoteAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE761ED5F67D2848006F066C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RokuRemoteAppTests/Pods-RokuRemoteAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC804BDD087BE92885EA7783 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F5DAEA11D61B3C600AA56DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F5DAEB11D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld in Sources */,
-				2F10E6141D620D490066EF5F /* IDatabaseConnector.swift in Sources */,
-				2F10E6211D6213D70066EF5F /* DatabaseConnector.swift in Sources */,
 				9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */,
-				2F10E6231D6214160066EF5F /* StubDatabaseConnector.swift in Sources */,
-				2F10E61E1D6211A70066EF5F /* RokuObject.swift in Sources */,
-				2F10E61D1D6211A70066EF5F /* RokuObject+CoreDataProperties.swift in Sources */,
+				4C41590F1D62197E0040A97B /* SocketConnectionProtocol.swift in Sources */,
+				9F3633091D62043E006A2656 /* HttpHandler.swift in Sources */,
+				4C41590E1D62197E0040A97B /* SocketConnectionFactory.swift in Sources */,
+				4C4159101D62197E0040A97B /* UDPSocketConnection.swift in Sources */,
 				9F5DAEA91D61B3C600AA56DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,11 +464,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F10E6241D6215730066EF5F /* StubDatabaseConnector.swift in Sources */,
-				2F10E61F1D6213100066EF5F /* RokuObject.swift in Sources */,
-				2F6FE7B81D62199A004C3C96 /* IDatabaseConnector.swift in Sources */,
+				9F36330A1D62043E006A2656 /* HttpHandler.swift in Sources */,
+				9F36330C1D62049F006A2656 /* HttpHandlerTests.swift in Sources */,
+				4C41591A1D621FCB0040A97B /* SocketConnectionTests.swift in Sources */,
 				9F5DAEC11D61B3C600AA56DF /* RokuRemoteAppTests.swift in Sources */,
-				2F10E6111D62070F0066EF5F /* DatabaseTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,9 +599,9 @@
 		};
 		9F5DAED11D61B3C600AA56DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E71CD0AB898282AF830F802 /* Pods-RokuRemoteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RokuRemoteApp/Info.plist;
@@ -450,15 +609,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Sky.RokuRemoteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9F5DAED21D61B3C600AA56DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 708E6C81D9F3DC0DF15E5243 /* Pods-RokuRemoteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RokuRemoteApp/Info.plist;
@@ -471,6 +629,7 @@
 		};
 		9F5DAED41D61B3C600AA56DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E8216D9E4E2D719EA2D24B /* Pods-RokuRemoteAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RokuRemoteAppTests/Info.plist;
@@ -483,6 +642,7 @@
 		};
 		9F5DAED51D61B3C600AA56DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 561A9EA7E7A588690943FFBE /* Pods-RokuRemoteAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RokuRemoteAppTests/Info.plist;
@@ -495,6 +655,7 @@
 		};
 		9F5DAED71D61B3C600AA56DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F266353BEC6614D4217E22 /* Pods-RokuRemoteAppUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = RokuRemoteAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -506,6 +667,7 @@
 		};
 		9F5DAED81D61B3C600AA56DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94DF6F9E9297FB0DFC5B0AD2 /* Pods-RokuRemoteAppUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = RokuRemoteAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
