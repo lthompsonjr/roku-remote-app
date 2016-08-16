@@ -4,17 +4,17 @@ import CocoaAsyncSocket
 public class UDPSocket : NSObject, SocketConnectionProtocol, GCDAsyncUdpSocketDelegate
 {
     
-    var mySocket: GCDAsyncUdpSocket!
+    var udpSocket: GCDAsyncUdpSocket!
 
     
     func isConnectionOpen() -> Bool
     {
-        if mySocket != nil
+        if udpSocket != nil
         {
-            return !mySocket.isClosed();
+            return !udpSocket.isClosed();
 
         }
-        print("No Socket")
+    
         return false
     }
     
@@ -30,21 +30,20 @@ public class UDPSocket : NSObject, SocketConnectionProtocol, GCDAsyncUdpSocketDe
         let broadcastAddress: String = "239.255.255.250"
         let broadcastPort:UInt16 = 1900
         
-        //DO something
         let mSearchString: NSData = "M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1900\r\nMAN: \"ssdp:discover\"\r\nMX: 3\r\nST: roku:ecp\r\nUSER-AGENT: iOS UPnP/1.1 TestApp/1.0\r\n\r\n".dataUsingEncoding(NSUTF8StringEncoding)!
         
-        mySocket = GCDAsyncUdpSocket(delegate: self, delegateQueue: dispatch_get_main_queue());
+        udpSocket = GCDAsyncUdpSocket(delegate: self, delegateQueue: dispatch_get_main_queue());
         
-        mySocket.sendData(mSearchString, toHost: broadcastAddress, port: broadcastPort, withTimeout: 60, tag: 0)
+        udpSocket.sendData(mSearchString, toHost: broadcastAddress, port: broadcastPort, withTimeout: 60, tag: 0)
         
         
         do{
-            try mySocket.bindToPort(broadcastPort)
-            try mySocket.joinMulticastGroup(broadcastAddress)
-            try mySocket.beginReceiving()
+            try udpSocket.bindToPort(broadcastPort)
+            try udpSocket.joinMulticastGroup(broadcastAddress)
+            try udpSocket.beginReceiving()
         }
         catch {
-            print("I failed!!")
+            print("No Connection Found")
         }
 
     }
@@ -52,9 +51,9 @@ public class UDPSocket : NSObject, SocketConnectionProtocol, GCDAsyncUdpSocketDe
     
     func closeConnection()
     {
-        if (mySocket != nil || !mySocket.isClosed())
+        if (udpSocket != nil || !udpSocket.isClosed())
         {
-            mySocket.close()
+            udpSocket.close()
         }
     }
     
