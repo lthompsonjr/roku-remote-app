@@ -1,10 +1,16 @@
 import XCTest
+import CocoaAsyncSocket
 
 class SocketConnectionTests: XCTestCase {
     
+    let socketFactory = SocketFactory()
+    
+    
+    
     override func setUp() {
         super.setUp()
-        let UDPSocket = UDPSocketConnection()
+        
+        
     }
     
     override func tearDown() {
@@ -12,23 +18,19 @@ class SocketConnectionTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
-    func testUdpOpenConnection()
+    func testOpenUdpConnection()
     {
-        let UdpSocket = UDPSocket.openConnection()
-        //XCTAssertTrue(UdpSocket as? [GCDAsyncUdpSocket])
-        XCTAssertNotNil(UdpSocket)
+        let udpSocket = socketFactory.getUdpSocket()
+        udpSocket.openConnection()
+        XCTAssertTrue(udpSocket.isConnectionOpen())
+        udpSocket.closeConnection();
     }
     
+    func testCloseUdpConnection()
+    {
+        let udpSocket = socketFactory.getUdpSocket()
+        udpSocket.openConnection()
+        udpSocket.closeConnection();
+        XCTAssertFalse(udpSocket.isConnectionOpen())
+    }
 }

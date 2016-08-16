@@ -1,7 +1,10 @@
 import Foundation
+import CocoaAsyncSocket
 
 protocol SocketConnectionProtocol
 {
-    func openConnection<T>() -> T
-    func closeConnection() -> Bool
+    func openConnection()
+    func closeConnection()
+    func isConnectionOpen() -> Bool
+
 }
