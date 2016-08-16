@@ -7,12 +7,37 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       
+        
+//        
+//        var moc = AppDelegate().managedObjectContext
+//        
+//        
+//        let ipAddress = "crap"
+//        let deviceName = "more crap"
+//        let lastConnected = NSDate()
+//        let serielNumber = "even more crap"
+//        
+//        
+//        
+//        //Test
+//        var someObject = RokuDevice.insertRokuObjectInContext(moc,ipAddress: ipAddress, deviceName: deviceName, lastConnected: lastConnected, serialNumber: serielNumber) as! RokuDevice
+//        let fetchRequest = NSFetchRequest(entityName:"RokuDevice")
+//        
+//        var fetchedObjects = try! moc.executeFetchRequest(fetchRequest) as! [RokuDevice]
+//        print(fetchedObjects.first?.deviceName)
+//        
+
+        
     }
 
     override func didReceiveMemoryWarning() {
