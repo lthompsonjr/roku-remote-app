@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ResponseDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let httpHandlerTest: HttpHandler = HttpHandler(url: "http://192.168.2.4:8060")
+        httpHandlerTest.callGetInfoEndPoint(self)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func didReceiveResponse(data: NSData) {
+        
+    }
+    
+    func didReceiveXMLInfo(data: NSData) {
+        
+    }
+    
 }
 
