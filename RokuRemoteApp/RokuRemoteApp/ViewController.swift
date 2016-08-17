@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ResponseDelegate {
     
-    let httpHandler: HttpHandler
+    var httpHandler: HttpHandler!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        //move this into the call back function that returns an ip address
+        httpHandler = HttpHandler(url: "http://192.168.2.4:8060")
+       
         
     }
 
@@ -27,37 +30,60 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressedUp(sender: AnyObject)
     {
+        let buttonpressedUpURL = "/keypress/Up"
+        httpHandler.buttonPressed(buttonpressedUpURL, delegate: self)
         
     }
     
     @IBAction func buttonPressedDown(sender: AnyObject)
     {
-        
+        let buttonpressedDownURL = "/keypress/Down"
+        httpHandler.buttonPressed(buttonpressedDownURL, delegate: self)
     }
     
     @IBAction func buttonPressedLeft(sender: AnyObject)
     {
-        
+        let buttonpressedLeftURL = "/keypress/Left"
+        httpHandler.buttonPressed(buttonpressedLeftURL, delegate: self)
     }
     
     @IBAction func buttonPressedRight(sender: AnyObject)
     {
-        
+        let buttonpressedRightURL = "/keypress/Right"
+        httpHandler.buttonPressed(buttonpressedRightURL, delegate: self)
     }
     
     @IBAction func buttonPressedOK(sender: AnyObject)
     {
-        
+        let buttonpressedOkURL = "/keypress/Ok"
+        httpHandler.buttonPressed(buttonpressedOkURL, delegate: self)
     }
     
     @IBAction func buttonPressedBack(sender: AnyObject)
     {
-        
+        let buttonpressedBackURL = "/keypress/Back"
+        httpHandler.buttonPressed(buttonpressedBackURL, delegate: self)
     }
     
     @IBAction func buttonPressedHome(sender: AnyObject)
     {
+        let buttonpressedHomeURL = "/keypress/Home"
+        httpHandler.buttonPressed(buttonpressedHomeURL, delegate: self)
+    }
+    
+    
+    func didReceiveResponse(data: NSData)
+    {
         
     }
+    
+    // Used for the getDeviceInfo function, which will return an XML with the info.
+    func didReceiveXMLInfo(data: NSData)
+    {
+        
+    }
+
+    
+    
 }
 
