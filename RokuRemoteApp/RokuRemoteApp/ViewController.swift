@@ -9,8 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let httpHandler: HttpHandler
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
     }
@@ -20,5 +23,41 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: Actions
+    
+    @IBAction func buttonPressedUp(sender: AnyObject)
+    {
+        
+    }
+    
+    @IBAction func buttonPressedDown(sender: AnyObject)
+    {
+        
+    }
+    
+    @IBAction func buttonPressedLeft(sender: AnyObject)
+    {
+        
+    }
+    
+    @IBAction func buttonPressedRight(sender: AnyObject)
+    {
+        
+    }
+    
+    @IBAction func buttonPressedOK(sender: AnyObject)
+    {
+        
+    }
+    
+    @IBAction func buttonPressedBack(sender: AnyObject)
+    {
+        
+    }
+    
+    @IBAction func buttonPressedHome(sender: AnyObject)
+    {
+        
+    }
 }
 
