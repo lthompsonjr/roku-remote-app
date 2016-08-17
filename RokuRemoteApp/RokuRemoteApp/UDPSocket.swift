@@ -42,11 +42,10 @@ public class UDPSocket : NSObject, SocketConnectionProtocol, GCDAsyncUdpSocketDe
         
         
         do{
-            
             try udpSocket.bindToPort(broadcastPort)
             try udpSocket.joinMulticastGroup(broadcastAddress)
             try udpSocket.beginReceiving()
-            
+            udpSocket.address
         }
         catch {
             print("No Connection Found")
