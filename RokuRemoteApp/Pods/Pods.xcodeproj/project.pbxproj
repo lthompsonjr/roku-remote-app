@@ -7,101 +7,149 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CE898D7F1401A45D2DA5CD8429B20C6 /* Pods-RokuRemoteApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9B0F5B2284D9A5C4665D26F6E9974D /* Pods-RokuRemoteApp-dummy.m */; };
+		01989A2E2D7DDDE7F2ADD947886F527A /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A956C8EC9F6CA7E055584964D3FDB /* OHHTTPStubs+NSURLSessionConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		123DEDF0C786D4F6C285DE17FBFD54A0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5135EC14FA83C331E94D40C19DAB0764 /* CFNetwork.framework */; };
+		14ACB130F727A9BDB98F4AA74D6254DA /* NSURLRequest+HTTPBodyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 68C848D966031068C11521216536A08C /* NSURLRequest+HTTPBodyTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1941A05B182F349823C059DD24ABF79A /* OHPathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = C4509ADF9823D729DFE1635C1E20CE86 /* OHPathHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22063BF244C168FE3E9E435BBD46DCEA /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F799E8838F5B28F61261313599777CC /* OHHTTPStubsResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2932634DE24F491A3FC9D04F7C6AA34C /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F699E89B62E7085E931BEDD3B48442 /* OHHTTPStubs.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2DA53EB83F96EC030D3C718D070E7002 /* OHHTTPStubsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6F61E8D375AAB4F4CCB64598C18267 /* OHHTTPStubsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		383F3B78AA9F465929DFA0B9260F8F01 /* Pods-RokuRemoteAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2DD4ACEDC02F1B36C963AC69834F8F /* Pods-RokuRemoteAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40290FA4E4BC11614D00AA0F530061C0 /* Pods-RokuRemoteAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B6A8165BF17AAACD7124D3A4491766 /* Pods-RokuRemoteAppTests-dummy.m */; };
-		6AAFA2F344A6B58F728AF958F3FE6D89 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA8FFB2F306345702A20E3FE7CE6EF7 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		588EF69BD1759F725E2C2EC603DE05FC /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E4B2BC3694D848879A4612856BEBC /* OHHTTPStubsSwift.swift */; };
+		6AAFA2F344A6B58F728AF958F3FE6D89 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = BA21366C490CB7DC6F6FCB734400B3B5 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D379FB137A87EF9CA4A2F416C619270 /* Pods-RokuRemoteApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9B0F5B2284D9A5C4665D26F6E9974D /* Pods-RokuRemoteApp-dummy.m */; };
+		7164BBF578E7543B1707DBC453A6AF27 /* OHHTTPStubs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83551656FE3D8643FB392C5F7E64424B /* OHHTTPStubs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84096B6A35169794FED89CD737DF2E1C /* NSURLRequest+HTTPBodyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4F7BE730206D3BB43EE38EDA29B16 /* NSURLRequest+HTTPBodyTesting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		859DB1DB053B5702FF34CAA1F5299091 /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8331C9EA52CBB1A1B0688E352F921C60 /* OHHTTPStubs-dummy.m */; };
 		89E060F39AFF73494E0E55008F855E24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
+		90E9A42766A1AE8B11B086C79E287D34 /* Pods-RokuRemoteApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 556D4C4E209FFB1B49B776EF2C9B660B /* Pods-RokuRemoteApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91708ACCCDECC289DB4E8EC62C5E70FA /* Pods-RokuRemoteAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FAD34FFA2366B4BA3A3F448BB778CE /* Pods-RokuRemoteAppUITests-dummy.m */; };
-		92AED971B91C640191A5ABA1567FE358 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A110336E93C3E786F9B32956E29A3E /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		991BFD139F6A45C9B654960C2F6A7F09 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D696A8CDEBE87CDE80E57AE0E305C5F /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		ACFE60AB34A7FEF697E6EEFB62436A8D /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D9F3F23E9E53DAFA379995A9E13E58 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92AED971B91C640191A5ABA1567FE358 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0698B94EB5751C588BF6C6B886551BC1 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95B296109ADBC4C4C63FA1D8D5C56874 /* OHHTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 56652172F55BA0C87780AF4919F50104 /* OHHTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96151E0516F0FAA666C25A0EC52FDAA6 /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C054BA41D97AC59FE0AE668E08C57F /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		991BFD139F6A45C9B654960C2F6A7F09 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FF62A75B3C1496EA4999106C6AB2F /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ACFE60AB34A7FEF697E6EEFB62436A8D /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D61FE0C1482F7B240C3E8C172EBECC /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1C36F8E1B1D69D37812562EF03FA7A4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5135EC14FA83C331E94D40C19DAB0764 /* CFNetwork.framework */; };
-		B3B1575FAB0AE5CF17B8D535012C7EF1 /* Pods-RokuRemoteApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 556D4C4E209FFB1B49B776EF2C9B660B /* Pods-RokuRemoteApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B75158A4A380410251EFB9FB91F09C0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
+		BCF63566264CE0BB166C4E9A5E5813B4 /* OHHTTPStubsMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A27579F9C089DE9380FF9028D182F11 /* OHHTTPStubsMethodSwizzling.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CEFE28420773FC61D2DB4778ABDC12A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
-		D9A44696356E299F3C9A4BFF9E57343F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 098765466D421180F3953EF8EEDDCEF1 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D2E06DA27082B98F83A6D1662D3194E1 /* OHHTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0DA3C63E4175F82CEC81574776B20A /* OHHTTPStubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8F5F0031D9C440657C729EFCD3A4C6B /* OHHTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF6F3D1B2A087CBB045C49E35F1906D /* OHHTTPStubsResponse+JSON.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D9A44696356E299F3C9A4BFF9E57343F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DD174FF47A84A80345FD7F99FC1230AC /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E7D4258ECEA41114496E5A7BE1A1C734 /* Pods-RokuRemoteAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73665626D37598CD0632571D2429EB90 /* Pods-RokuRemoteAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA8C8BC2FB1F1B5697F5602998ED3A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
-		F45B40DF0BF596BDCD96B2D85EF848FA /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E98378F2CF04086E8088C6A14347C33 /* CocoaAsyncSocket-dummy.m */; };
+		F45B40DF0BF596BDCD96B2D85EF848FA /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A118697ED857CEB33891D43F737E8BE /* CocoaAsyncSocket-dummy.m */; };
 		F66C2596240AA1C68F6AD7C622C6D007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
 		F87F607CCD51536EC9CAD7F1488845C6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAF4AB1ECD042E4FED766B8370F6530 /* Security.framework */; };
+		F90742117F43668C0C80BCEC6264CFF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
+		FBC443B2D6DC3D721D0A1AB5C3E05719 /* OHHTTPStubsMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 858449604FA4F17D745688C1BE6E2640 /* OHHTTPStubsMethodSwizzling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FCFAC0A69469635C9986B36CC881BE4B /* OHPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C8417CDB5D4587A0846E336B33F4D /* OHPathHelpers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		623C627EA7C95281640BAD5A0E90E54A /* PBXContainerItemProxy */ = {
+		2B894BEBFFFC22B4E2DDCD7A7BF81716 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B37E19CA872A7535725D1E1946E5C271;
 			remoteInfo = CocoaAsyncSocket;
 		};
+		82B6836AD0CFFEF21F3E6B92F65EAA46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 819D98B2274D0D02398DA2FD14346272;
+			remoteInfo = OHHTTPStubs;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		098765466D421180F3953EF8EEDDCEF1 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		0698B94EB5751C588BF6C6B886551BC1 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		0BF6F3D1B2A087CBB045C49E35F1906D /* OHHTTPStubsResponse+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubsResponse+JSON.m"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.m"; sourceTree = "<group>"; };
+		123BFF08B9D55E6261858E4C936EC891 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176FCFD1BE9731B8002589A745919B36 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
 		1976E2902ED72EFEF25289B4EE0FFF6F /* Pods-RokuRemoteAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RokuRemoteAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1CB4BB8CFEF59517406EB92108975FAC /* Pods-RokuRemoteAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RokuRemoteAppUITests-resources.sh"; sourceTree = "<group>"; };
-		1D696A8CDEBE87CDE80E57AE0E305C5F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		1E95C242E7B8D588C05CC43B0A23B5A9 /* Pods-RokuRemoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RokuRemoteApp.release.xcconfig"; sourceTree = "<group>"; };
-		2DD5764E71FB138B5FFB826324F5BB2E /* Pods_RokuRemoteAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EF436B09B560AF848B4D98C55F61FE0 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		29C054BA41D97AC59FE0AE668E08C57F /* Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Compatibility.h; path = OHHTTPStubs/Sources/Compatibility.h; sourceTree = "<group>"; };
 		37CA67CA1878D13595C9AA8BDC82F825 /* Pods-RokuRemoteAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RokuRemoteAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E8C8417CDB5D4587A0846E336B33F4D /* OHPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHPathHelpers.m; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.m; sourceTree = "<group>"; };
 		3F6FF3B46AFE31E2CA65FF220474F98B /* Pods-RokuRemoteAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RokuRemoteAppTests-frameworks.sh"; sourceTree = "<group>"; };
 		461D21F3BA66409E81A8EB7B44802383 /* Pods-RokuRemoteAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RokuRemoteAppUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4C26AD8AA64447B65D66581E86CB543A /* Pods-RokuRemoteAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RokuRemoteAppTests-resources.sh"; sourceTree = "<group>"; };
-		4CA8FFB2F306345702A20E3FE7CE6EF7 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4D78EC951CFC50C50B9F2FCF4F402316 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		4E7A64921AAB3D57C012FFB3D1A3B6E7 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F799E8838F5B28F61261313599777CC /* OHHTTPStubsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsResponse.m; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.m; sourceTree = "<group>"; };
 		5135EC14FA83C331E94D40C19DAB0764 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		556D4C4E209FFB1B49B776EF2C9B660B /* Pods-RokuRemoteApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RokuRemoteApp-umbrella.h"; sourceTree = "<group>"; };
+		56652172F55BA0C87780AF4919F50104 /* OHHTTPStubsResponse+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OHHTTPStubsResponse+JSON.h"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h"; sourceTree = "<group>"; };
+		5A27579F9C089DE9380FF9028D182F11 /* OHHTTPStubsMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsMethodSwizzling.h; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.h; sourceTree = "<group>"; };
+		5B4DB9F5BC0E9B624C76CDEC1DC688C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636B6B905351D247BF5A74F92221F441 /* Pods_RokuRemoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		639B5BF41532C4E7C661638B1E9D7AE9 /* Pods-RokuRemoteAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RokuRemoteAppUITests.modulemap"; sourceTree = "<group>"; };
+		64C5D36E600589B0CC0CE3A3E47BC7F4 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
 		64DAA42889B63DCE3AD96B8125264B35 /* Pods-RokuRemoteApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RokuRemoteApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		6597EF21401BC030E3801FF3B6C342B5 /* Pods_RokuRemoteAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C848D966031068C11521216536A08C /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
 		6AFE263023D5E017C5D792BA79F7E1DB /* Pods-RokuRemoteApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RokuRemoteApp.modulemap"; sourceTree = "<group>"; };
 		6F960297A5641198D59F40018C8F3515 /* Pods-RokuRemoteAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RokuRemoteAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		70FAD34FFA2366B4BA3A3F448BB778CE /* Pods-RokuRemoteAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RokuRemoteAppUITests-dummy.m"; sourceTree = "<group>"; };
 		73665626D37598CD0632571D2429EB90 /* Pods-RokuRemoteAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RokuRemoteAppTests-umbrella.h"; sourceTree = "<group>"; };
 		74DD7B602F9CD09FB94D6BD5A1597910 /* Pods-RokuRemoteAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RokuRemoteAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		750CB3E97C4E25C1A9E6B69D22E39E50 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B6A8165BF17AAACD7124D3A4491766 /* Pods-RokuRemoteAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RokuRemoteAppTests-dummy.m"; sourceTree = "<group>"; };
-		75F9206B99E5B5423D6B61D755C011CC /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		7A118697ED857CEB33891D43F737E8BE /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
 		7CAF4AB1ECD042E4FED766B8370F6530 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		7E2DD4ACEDC02F1B36C963AC69834F8F /* Pods-RokuRemoteAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RokuRemoteAppUITests-umbrella.h"; sourceTree = "<group>"; };
 		827C0B83B8E9616388B2ABEFC5DCDA3E /* Pods-RokuRemoteApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RokuRemoteApp-frameworks.sh"; sourceTree = "<group>"; };
-		84A110336E93C3E786F9B32956E29A3E /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		8331C9EA52CBB1A1B0688E352F921C60 /* OHHTTPStubs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs-dummy.m"; sourceTree = "<group>"; };
+		83551656FE3D8643FB392C5F7E64424B /* OHHTTPStubs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-umbrella.h"; sourceTree = "<group>"; };
 		84E3837FDA993C4199A971B1DEABFD03 /* Pods-RokuRemoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RokuRemoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		858449604FA4F17D745688C1BE6E2640 /* OHHTTPStubsMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsMethodSwizzling.m; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.m; sourceTree = "<group>"; };
 		862956C2338DED8B58138802A6B956E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86340A99F20BEC0D9E6F18F9080B8720 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
 		87CF9F051BF43B87B7FB252D16675F5B /* Pods-RokuRemoteAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RokuRemoteAppTests.modulemap"; sourceTree = "<group>"; };
 		886285A90822C90C46BB2FEBCDBA81B2 /* Pods-RokuRemoteApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RokuRemoteApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8897EF90B2D55946A61AD5A10C38B75C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E98378F2CF04086E8088C6A14347C33 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		898E4B2BC3694D848879A4612856BEBC /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHHTTPStubsSwift.swift; path = OHHTTPStubs/Sources/Swift/OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
+		8D4FF62A75B3C1496EA4999106C6AB2F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		925D8BF13EF05E552F6948448FAC9F73 /* Pods-RokuRemoteAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RokuRemoteAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D86427F3A0BBEE97C727204CBA062F5 /* Pods_RokuRemoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A799A6DF9B0DB109423D048AAC0C22 /* OHHTTPStubs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-prefix.pch"; sourceTree = "<group>"; };
+		9AC4F7BE730206D3BB43EE38EDA29B16 /* NSURLRequest+HTTPBodyTesting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+HTTPBodyTesting.m"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.m"; sourceTree = "<group>"; };
+		A63A956C8EC9F6CA7E055584964D3FDB /* OHHTTPStubs+NSURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubs+NSURLSessionConfiguration.m"; path = "OHHTTPStubs/Sources/NSURLSession/OHHTTPStubs+NSURLSessionConfiguration.m"; sourceTree = "<group>"; };
 		A701B203DADA5EA18E6FB067B2144F4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9C84C9610FF38D47B90FEA42526968A /* Pods-RokuRemoteAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RokuRemoteAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA21366C490CB7DC6F6FCB734400B3B5 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		BF6F61E8D375AAB4F4CCB64598C18267 /* OHHTTPStubsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsResponse.h; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.h; sourceTree = "<group>"; };
+		C4509ADF9823D729DFE1635C1E20CE86 /* OHPathHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHPathHelpers.h; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.h; sourceTree = "<group>"; };
+		C4D61FE0C1482F7B240C3E8C172EBECC /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
 		C6DCFA2B196DD3DF38D64BDD44E1A495 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7951021803570E3AD7AC2029262E69 /* Pods-RokuRemoteAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RokuRemoteAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		CF2E240872C0C9C765CC7AA2FBB4DF5F /* Pods_RokuRemoteAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6D9F3F23E9E53DAFA379995A9E13E58 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		DD174FF47A84A80345FD7F99FC1230AC /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		DD9B0F5B2284D9A5C4665D26F6E9974D /* Pods-RokuRemoteApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RokuRemoteApp-dummy.m"; sourceTree = "<group>"; };
 		DE6EE5450FB82C66234AA122473659E3 /* Pods-RokuRemoteApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RokuRemoteApp-resources.sh"; sourceTree = "<group>"; };
+		DF4FD5847CDEF3607831EE615C49853B /* Pods_RokuRemoteAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuRemoteAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C17509CAFE82AF5D0CFBE2DA013E6C /* Pods-RokuRemoteAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RokuRemoteAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E8496B4112A8716DF48465892172A2B5 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB41B74DF25249D36BAA346186330E7E /* OHHTTPStubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.xcconfig; sourceTree = "<group>"; };
+		EE0DA3C63E4175F82CEC81574776B20A /* OHHTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubs.h; path = OHHTTPStubs/Sources/OHHTTPStubs.h; sourceTree = "<group>"; };
+		F49021616B7ECBDFF5CA7EF36BBA9EF0 /* OHHTTPStubs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OHHTTPStubs.modulemap; sourceTree = "<group>"; };
+		F5F699E89B62E7085E931BEDD3B48442 /* OHHTTPStubs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubs.m; path = OHHTTPStubs/Sources/OHHTTPStubs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23628D58CE6BE595B54C01CBAFDBE7CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA8C8BC2FB1F1B5697F5602998ED3A5B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		40CE731BA170F413300931D1DF1CFE4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F66C2596240AA1C68F6AD7C622C6D007 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3652BD8B406DA69E83D55500BA9C304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75158A4A380410251EFB9FB91F09C0C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +160,15 @@
 				B1C36F8E1B1D69D37812562EF03FA7A4 /* CFNetwork.framework in Frameworks */,
 				CEFE28420773FC61D2DB4778ABDC12A1 /* Foundation.framework in Frameworks */,
 				F87F607CCD51536EC9CAD7F1488845C6 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E207016083A887126F6F5002E37F951C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123DEDF0C786D4F6C285DE17FBFD54A0 /* CFNetwork.framework in Frameworks */,
+				F90742117F43668C0C80BCEC6264CFF0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,12 +211,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3750E20CAB4987ACB8AB27B6C25C1D60 /* Pods */ = {
+		2FBFBCBE10C8C75B108741D2D571AEDA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B16CCCC916CD9D13BBF53EA0C69C4615 /* CocoaAsyncSocket */,
+				5B4DB9F5BC0E9B624C76CDEC1DC688C7 /* Info.plist */,
+				F49021616B7ECBDFF5CA7EF36BBA9EF0 /* OHHTTPStubs.modulemap */,
+				EB41B74DF25249D36BAA346186330E7E /* OHHTTPStubs.xcconfig */,
+				8331C9EA52CBB1A1B0688E352F921C60 /* OHHTTPStubs-dummy.m */,
+				94A799A6DF9B0DB109423D048AAC0C22 /* OHHTTPStubs-prefix.pch */,
+				83551656FE3D8643FB392C5F7E64424B /* OHHTTPStubs-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/OHHTTPStubs";
+			sourceTree = "<group>";
+		};
+		4A50411DBE4465F80D2357A7570191F1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				56652172F55BA0C87780AF4919F50104 /* OHHTTPStubsResponse+JSON.h */,
+				0BF6F3D1B2A087CBB045C49E35F1906D /* OHHTTPStubsResponse+JSON.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		4F53C3D561AA6F82D0CB77A5854527C2 /* OHPathHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				C4509ADF9823D729DFE1635C1E20CE86 /* OHPathHelpers.h */,
+				3E8C8417CDB5D4587A0846E336B33F4D /* OHPathHelpers.m */,
+			);
+			name = OHPathHelpers;
 			sourceTree = "<group>";
 		};
 		531F8D6CE6352EB719815F23C5A9A954 /* Pods-RokuRemoteAppUITests */ = {
@@ -180,18 +261,13 @@
 			path = "Target Support Files/Pods-RokuRemoteAppUITests";
 			sourceTree = "<group>";
 		};
-		557C7CF8D4466D636F16673BAB31EEF1 /* Support Files */ = {
+		6804D537A28E5165390900B2B5BA1CCA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				86340A99F20BEC0D9E6F18F9080B8720 /* CocoaAsyncSocket.modulemap */,
-				2EF436B09B560AF848B4D98C55F61FE0 /* CocoaAsyncSocket.xcconfig */,
-				8E98378F2CF04086E8088C6A14347C33 /* CocoaAsyncSocket-dummy.m */,
-				75F9206B99E5B5423D6B61D755C011CC /* CocoaAsyncSocket-prefix.pch */,
-				D6D9F3F23E9E53DAFA379995A9E13E58 /* CocoaAsyncSocket-umbrella.h */,
-				8897EF90B2D55946A61AD5A10C38B75C /* Info.plist */,
+				E34458D5164C84D1715B2FF5A2AEEE73 /* CocoaAsyncSocket */,
+				F75E90F5DDD661BA2121B5EF27D7CDFB /* OHHTTPStubs */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CocoaAsyncSocket";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -199,8 +275,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				3750E20CAB4987ACB8AB27B6C25C1D60 /* Pods */,
-				7ED642407106157AF4ED98A696FFB456 /* Products */,
+				6804D537A28E5165390900B2B5BA1CCA /* Pods */,
+				B082BEC0DD6BB254DEBB842E3406A058 /* Products */,
 				0BC9B380A7672B4F9F6A077EC129AD55 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -223,33 +299,60 @@
 			path = "Target Support Files/Pods-RokuRemoteApp";
 			sourceTree = "<group>";
 		};
-		7ED642407106157AF4ED98A696FFB456 /* Products */ = {
+		96F4B6D6B726175CFABAD2BDECA10913 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E8496B4112A8716DF48465892172A2B5 /* CocoaAsyncSocket.framework */,
-				9D86427F3A0BBEE97C727204CBA062F5 /* Pods_RokuRemoteApp.framework */,
-				CF2E240872C0C9C765CC7AA2FBB4DF5F /* Pods_RokuRemoteAppTests.framework */,
-				2DD5764E71FB138B5FFB826324F5BB2E /* Pods_RokuRemoteAppUITests.framework */,
+				4D78EC951CFC50C50B9F2FCF4F402316 /* CocoaAsyncSocket.modulemap */,
+				64C5D36E600589B0CC0CE3A3E47BC7F4 /* CocoaAsyncSocket.xcconfig */,
+				7A118697ED857CEB33891D43F737E8BE /* CocoaAsyncSocket-dummy.m */,
+				176FCFD1BE9731B8002589A745919B36 /* CocoaAsyncSocket-prefix.pch */,
+				C4D61FE0C1482F7B240C3E8C172EBECC /* CocoaAsyncSocket-umbrella.h */,
+				123BFF08B9D55E6261858E4C936EC891 /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
 			sourceTree = "<group>";
 		};
-		982AE8715AD34D5D99A50B615809B1F1 /* GCD */ = {
+		9FE2B559E629B705E1B093ECED749F79 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				4CA8FFB2F306345702A20E3FE7CE6EF7 /* GCDAsyncSocket.h */,
-				1D696A8CDEBE87CDE80E57AE0E305C5F /* GCDAsyncSocket.m */,
-				84A110336E93C3E786F9B32956E29A3E /* GCDAsyncUdpSocket.h */,
-				098765466D421180F3953EF8EEDDCEF1 /* GCDAsyncUdpSocket.m */,
+				BA21366C490CB7DC6F6FCB734400B3B5 /* GCDAsyncSocket.h */,
+				8D4FF62A75B3C1496EA4999106C6AB2F /* GCDAsyncSocket.m */,
+				0698B94EB5751C588BF6C6B886551BC1 /* GCDAsyncUdpSocket.h */,
+				DD174FF47A84A80345FD7F99FC1230AC /* GCDAsyncUdpSocket.m */,
 			);
 			name = GCD;
 			sourceTree = "<group>";
 		};
-		B16CCCC916CD9D13BBF53EA0C69C4615 /* CocoaAsyncSocket */ = {
+		B082BEC0DD6BB254DEBB842E3406A058 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				982AE8715AD34D5D99A50B615809B1F1 /* GCD */,
-				557C7CF8D4466D636F16673BAB31EEF1 /* Support Files */,
+				750CB3E97C4E25C1A9E6B69D22E39E50 /* CocoaAsyncSocket.framework */,
+				4E7A64921AAB3D57C012FFB3D1A3B6E7 /* OHHTTPStubs.framework */,
+				636B6B905351D247BF5A74F92221F441 /* Pods_RokuRemoteApp.framework */,
+				6597EF21401BC030E3801FF3B6C342B5 /* Pods_RokuRemoteAppTests.framework */,
+				DF4FD5847CDEF3607831EE615C49853B /* Pods_RokuRemoteAppUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D559F740049A803692D56478FBE89151 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				68C848D966031068C11521216536A08C /* NSURLRequest+HTTPBodyTesting.h */,
+				9AC4F7BE730206D3BB43EE38EDA29B16 /* NSURLRequest+HTTPBodyTesting.m */,
+				A63A956C8EC9F6CA7E055584964D3FDB /* OHHTTPStubs+NSURLSessionConfiguration.m */,
+				5A27579F9C089DE9380FF9028D182F11 /* OHHTTPStubsMethodSwizzling.h */,
+				858449604FA4F17D745688C1BE6E2640 /* OHHTTPStubsMethodSwizzling.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		E34458D5164C84D1715B2FF5A2AEEE73 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9FE2B559E629B705E1B093ECED749F79 /* GCD */,
+				96F4B6D6B726175CFABAD2BDECA10913 /* Support Files */,
 			);
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
@@ -272,6 +375,39 @@
 			path = "Target Support Files/Pods-RokuRemoteAppTests";
 			sourceTree = "<group>";
 		};
+		E93556E987A858B6B952B23198B572C2 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				898E4B2BC3694D848879A4612856BEBC /* OHHTTPStubsSwift.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		F60422323811A907CE2BE8729CA4DF59 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				29C054BA41D97AC59FE0AE668E08C57F /* Compatibility.h */,
+				EE0DA3C63E4175F82CEC81574776B20A /* OHHTTPStubs.h */,
+				F5F699E89B62E7085E931BEDD3B48442 /* OHHTTPStubs.m */,
+				BF6F61E8D375AAB4F4CCB64598C18267 /* OHHTTPStubsResponse.h */,
+				4F799E8838F5B28F61261313599777CC /* OHHTTPStubsResponse.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		F75E90F5DDD661BA2121B5EF27D7CDFB /* OHHTTPStubs */ = {
+			isa = PBXGroup;
+			children = (
+				F60422323811A907CE2BE8729CA4DF59 /* Core */,
+				4A50411DBE4465F80D2357A7570191F1 /* JSON */,
+				D559F740049A803692D56478FBE89151 /* NSURLSession */,
+				4F53C3D561AA6F82D0CB77A5854527C2 /* OHPathHelpers */,
+				2FBFBCBE10C8C75B108741D2D571AEDA /* Support Files */,
+				E93556E987A858B6B952B23198B572C2 /* Swift */,
+			);
+			path = OHHTTPStubs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -285,6 +421,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		746472012B4391A15F30D2400B44C0E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E9A42766A1AE8B11B086C79E287D34 /* Pods-RokuRemoteApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75413F4746727FD9E92A853963BB8A58 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,19 +437,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B12CD01DEBC1A5DE104E41D39F9F8235 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3B1575FAB0AE5CF17B8D535012C7EF1 /* Pods-RokuRemoteApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C1E76FF76827D42C9A7C27D6F3A2FCEB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				383F3B78AA9F465929DFA0B9260F8F01 /* Pods-RokuRemoteAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B3D5476A9BBC679EAC586568B1BCA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96151E0516F0FAA666C25A0EC52FDAA6 /* Compatibility.h in Headers */,
+				14ACB130F727A9BDB98F4AA74D6254DA /* NSURLRequest+HTTPBodyTesting.h in Headers */,
+				7164BBF578E7543B1707DBC453A6AF27 /* OHHTTPStubs-umbrella.h in Headers */,
+				D2E06DA27082B98F83A6D1662D3194E1 /* OHHTTPStubs.h in Headers */,
+				BCF63566264CE0BB166C4E9A5E5813B4 /* OHHTTPStubsMethodSwizzling.h in Headers */,
+				95B296109ADBC4C4C63FA1D8D5C56874 /* OHHTTPStubsResponse+JSON.h in Headers */,
+				2DA53EB83F96EC030D3C718D070E7002 /* OHHTTPStubsResponse.h in Headers */,
+				1941A05B182F349823C059DD24ABF79A /* OHPathHelpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +477,7 @@
 			);
 			name = "Pods-RokuRemoteAppUITests";
 			productName = "Pods-RokuRemoteAppUITests";
-			productReference = 2DD5764E71FB138B5FFB826324F5BB2E /* Pods_RokuRemoteAppUITests.framework */;
+			productReference = DF4FD5847CDEF3607831EE615C49853B /* Pods_RokuRemoteAppUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		163E4B242E6727A8A26C3AE8AF956987 /* Pods-RokuRemoteAppTests */ = {
@@ -343,25 +494,24 @@
 			);
 			name = "Pods-RokuRemoteAppTests";
 			productName = "Pods-RokuRemoteAppTests";
-			productReference = CF2E240872C0C9C765CC7AA2FBB4DF5F /* Pods_RokuRemoteAppTests.framework */;
+			productReference = 6597EF21401BC030E3801FF3B6C342B5 /* Pods_RokuRemoteAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		20F45FF0E5A0C5A5589AA84F6791926D /* Pods-RokuRemoteApp */ = {
+		819D98B2274D0D02398DA2FD14346272 /* OHHTTPStubs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3AC38FA1CB90B0B93A04C61F9B037A8 /* Build configuration list for PBXNativeTarget "Pods-RokuRemoteApp" */;
+			buildConfigurationList = 67D196FE8224D50F7BC173969AE60562 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */;
 			buildPhases = (
-				E7C0DD3E9F6061762DAF3322DFABD90A /* Sources */,
-				23628D58CE6BE595B54C01CBAFDBE7CC /* Frameworks */,
-				B12CD01DEBC1A5DE104E41D39F9F8235 /* Headers */,
+				B22FE715ED5B9798F0DB5AA3F46E436C /* Sources */,
+				E207016083A887126F6F5002E37F951C /* Frameworks */,
+				F7B3D5476A9BBC679EAC586568B1BCA2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				94A2C52045C437D21AC1F3DE29B243A8 /* PBXTargetDependency */,
 			);
-			name = "Pods-RokuRemoteApp";
-			productName = "Pods-RokuRemoteApp";
-			productReference = 9D86427F3A0BBEE97C727204CBA062F5 /* Pods_RokuRemoteApp.framework */;
+			name = OHHTTPStubs;
+			productName = OHHTTPStubs;
+			productReference = 4E7A64921AAB3D57C012FFB3D1A3B6E7 /* OHHTTPStubs.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B37E19CA872A7535725D1E1946E5C271 /* CocoaAsyncSocket */ = {
@@ -378,7 +528,26 @@
 			);
 			name = CocoaAsyncSocket;
 			productName = CocoaAsyncSocket;
-			productReference = E8496B4112A8716DF48465892172A2B5 /* CocoaAsyncSocket.framework */;
+			productReference = 750CB3E97C4E25C1A9E6B69D22E39E50 /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB09B5AF14117E78549F709994CBC082 /* Pods-RokuRemoteApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F464F50FCC08C361E183677FD57C7E8D /* Build configuration list for PBXNativeTarget "Pods-RokuRemoteApp" */;
+			buildPhases = (
+				3B917E9C5CD23A1D84D19EADC590A33C /* Sources */,
+				A3652BD8B406DA69E83D55500BA9C304 /* Frameworks */,
+				746472012B4391A15F30D2400B44C0E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE7E9A9B877E28B1059AC9A7706E714 /* PBXTargetDependency */,
+				2EC07A8A164688E424B59D611B6E87FF /* PBXTargetDependency */,
+			);
+			name = "Pods-RokuRemoteApp";
+			productName = "Pods-RokuRemoteApp";
+			productReference = 636B6B905351D247BF5A74F92221F441 /* Pods_RokuRemoteApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -398,12 +567,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7ED642407106157AF4ED98A696FFB456 /* Products */;
+			productRefGroup = B082BEC0DD6BB254DEBB842E3406A058 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B37E19CA872A7535725D1E1946E5C271 /* CocoaAsyncSocket */,
-				20F45FF0E5A0C5A5589AA84F6791926D /* Pods-RokuRemoteApp */,
+				819D98B2274D0D02398DA2FD14346272 /* OHHTTPStubs */,
+				DB09B5AF14117E78549F709994CBC082 /* Pods-RokuRemoteApp */,
 				163E4B242E6727A8A26C3AE8AF956987 /* Pods-RokuRemoteAppTests */,
 				0CA04FBFF9FF5423AFC77D7F65B434E5 /* Pods-RokuRemoteAppUITests */,
 			);
@@ -418,6 +588,14 @@
 				F45B40DF0BF596BDCD96B2D85EF848FA /* CocoaAsyncSocket-dummy.m in Sources */,
 				991BFD139F6A45C9B654960C2F6A7F09 /* GCDAsyncSocket.m in Sources */,
 				D9A44696356E299F3C9A4BFF9E57343F /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B917E9C5CD23A1D84D19EADC590A33C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D379FB137A87EF9CA4A2F416C619270 /* Pods-RokuRemoteApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,26 +615,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7C0DD3E9F6061762DAF3322DFABD90A /* Sources */ = {
+		B22FE715ED5B9798F0DB5AA3F46E436C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE898D7F1401A45D2DA5CD8429B20C6 /* Pods-RokuRemoteApp-dummy.m in Sources */,
+				84096B6A35169794FED89CD737DF2E1C /* NSURLRequest+HTTPBodyTesting.m in Sources */,
+				01989A2E2D7DDDE7F2ADD947886F527A /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */,
+				859DB1DB053B5702FF34CAA1F5299091 /* OHHTTPStubs-dummy.m in Sources */,
+				2932634DE24F491A3FC9D04F7C6AA34C /* OHHTTPStubs.m in Sources */,
+				FBC443B2D6DC3D721D0A1AB5C3E05719 /* OHHTTPStubsMethodSwizzling.m in Sources */,
+				D8F5F0031D9C440657C729EFCD3A4C6B /* OHHTTPStubsResponse+JSON.m in Sources */,
+				22063BF244C168FE3E9E435BBD46DCEA /* OHHTTPStubsResponse.m in Sources */,
+				588EF69BD1759F725E2C2EC603DE05FC /* OHHTTPStubsSwift.swift in Sources */,
+				FCFAC0A69469635C9986B36CC881BE4B /* OHPathHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		94A2C52045C437D21AC1F3DE29B243A8 /* PBXTargetDependency */ = {
+		1CE7E9A9B877E28B1059AC9A7706E714 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
 			target = B37E19CA872A7535725D1E1946E5C271 /* CocoaAsyncSocket */;
-			targetProxy = 623C627EA7C95281640BAD5A0E90E54A /* PBXContainerItemProxy */;
+			targetProxy = 2B894BEBFFFC22B4E2DDCD7A7BF81716 /* PBXContainerItemProxy */;
+		};
+		2EC07A8A164688E424B59D611B6E87FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHHTTPStubs;
+			target = 819D98B2274D0D02398DA2FD14346272 /* OHHTTPStubs */;
+			targetProxy = 82B6836AD0CFFEF21F3E6B92F65EAA46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		19E450DA5231661783D39A501F5F3608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E95C242E7B8D588C05CC43B0A23B5A9 /* Pods-RokuRemoteApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RokuRemoteApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RokuRemoteApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,72 +717,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4CA730629299E4AEB436480E76CD9817 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84E3837FDA993C4199A971B1DEABFD03 /* Pods-RokuRemoteApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RokuRemoteApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RokuRemoteApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		58BE0C9A5E7A41F25813AA6B57795942 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E95C242E7B8D588C05CC43B0A23B5A9 /* Pods-RokuRemoteApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RokuRemoteApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RokuRemoteApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -605,7 +764,7 @@
 		};
 		99BC16DAE09CDD5BA3C3A4F8E3D65225 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EF436B09B560AF848B4D98C55F61FE0 /* CocoaAsyncSocket.xcconfig */;
+			baseConfigurationReference = 64C5D36E600589B0CC0CE3A3E47BC7F4 /* CocoaAsyncSocket.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -631,6 +790,35 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		9BF99CF249AD111F5F62D19B49044E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB41B74DF25249D36BAA346186330E7E /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		A2E04695F5C11161170CB2AA3D95DED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -764,9 +952,73 @@
 			};
 			name = Debug;
 		};
+		FC42F011A5E93B738D9AD675E66087F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E3837FDA993C4199A971B1DEABFD03 /* Pods-RokuRemoteApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RokuRemoteApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RokuRemoteApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD63C8F168BD704F532EE782C924D7B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB41B74DF25249D36BAA346186330E7E /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FE5DA8CB481D8B5F69FCAFE882F0C425 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EF436B09B560AF848B4D98C55F61FE0 /* CocoaAsyncSocket.xcconfig */;
+			baseConfigurationReference = 64C5D36E600589B0CC0CE3A3E47BC7F4 /* CocoaAsyncSocket.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -814,6 +1066,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		67D196FE8224D50F7BC173969AE60562 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD63C8F168BD704F532EE782C924D7B3 /* Debug */,
+				9BF99CF249AD111F5F62D19B49044E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7F38F13A131647B8CC08E3B1C4FA4893 /* Build configuration list for PBXNativeTarget "Pods-RokuRemoteAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -832,11 +1093,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3AC38FA1CB90B0B93A04C61F9B037A8 /* Build configuration list for PBXNativeTarget "Pods-RokuRemoteApp" */ = {
+		F464F50FCC08C361E183677FD57C7E8D /* Build configuration list for PBXNativeTarget "Pods-RokuRemoteApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CA730629299E4AEB436480E76CD9817 /* Debug */,
-				58BE0C9A5E7A41F25813AA6B57795942 /* Release */,
+				FC42F011A5E93B738D9AD675E66087F4 /* Debug */,
+				19E450DA5231661783D39A501F5F3608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

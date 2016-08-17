@@ -9,16 +9,16 @@
 import XCTest
 import OHHTTPStubs
 
-class HttpHandlerTests: XCTestCase
+class HttpHandlerTests: XCTestCase, ResponseDelegate
 {
     
-    let ip: String = "http://192.168.2.4"
-    let session = MockURLSession()
+    let ip: String = "http://192.168.2.4:8060"
     var handler: HttpHandler!
+    var expectation: XCTestExpectation?
 
     override func setUp()
     {
-        handler = HttpHandler(session: session,url: ip)
+        handler = HttpHandler(url: ip)
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -29,41 +29,112 @@ class HttpHandlerTests: XCTestCase
         super.tearDown()
     }
     
-    
-//    
-//    func testGetDeviceInfo()
-//    {
-//        // Create stub of http response for getDeviceInfo()
-//        stub(isHost(ip) && isPath("/query/device-info"))
-//        { _ in
-//            return OHHTTPStubsResponse(
-//                data: NSData(),
-//                statusCode: 200,
-//                headers: .None
-//            )
-//        }
-//        
-//        // Get device info
-//        handler.getDeviceInfo() { status in
-//            
-//            // Assert
-//            XCTAssertEqual(status?, 200)
-//            
-//            expectation.fulfill()
-//        }
-//        
-//        self.waitForExpectationsWithTimeout(1, handler: .None)
-//        
-//        OHHTTPStubs.removeAllStubs()
-//    }
-    
-    func test_GET_StartsTheRequest() {
-        let dataTask = MockURLSessionDataTask()
-        session.nextDataTask = dataTask
+    func testGetDeviceInfo()
+    {
+        let testString = "testData"
+        let testNSString = testString as NSString
+        let testNSData = testNSString.dataUsingEncoding(NSUTF8StringEncoding)!
         
-        handler.get(NSURL()) { (_, _) -> Void in }
+        // Create stub of http response for getDeviceInfo()
+        stub(isMethodGET() && isPath("/query/device-info"))
+        { _ in
+            return OHHTTPStubsResponse(
+                data: testNSData,
+                statusCode: 200,
+                headers: .None
+            )
+        }
         
-        XCTAssert(dataTask.resumeWasCalled)
+        expectation = self.expectationWithDescription("asynchronous request")
+        
+        handler.getDeviceInfo(self)
+        
+        self.waitForExpectationsWithTimeout(10, handler: .None)
+    }
+    
+    
+    func testButtonPressed(buttonPressed: String)
+    {
+        let myString = "testData"
+        let myNSString = myString as NSString
+        let myNSData = myNSString.dataUsingEncoding(NSUTF8StringEncoding)!
+        
+        // Create stub of http response for getDeviceInfo()
+        stub(isMethodPOST() && isPath(buttonPressed))
+        { _ in
+            return OHHTTPStubsResponse(
+                data: myNSData,
+                statusCode: 200,
+                headers: .None
+            )
+        }
+        
+        expectation = self.expectationWithDescription("asynchronous request")
+        
+        handler.buttonPressed(buttonPressed, delegate: self)
+        
+        self.waitForExpectationsWithTimeout(10, handler: .None)
+    }
+    
+    
+    func testButtonPressedUp()
+    {
+        let getKeyUpEndPoint: String = "/keypress/Up"
+        testButtonPressed(getKeyUpEndPoint)
+    }
+    
+    func testButtonPressedDown()
+    {
+        let getKeyDownEndPoint: String = "/keypress/Down"
+        testButtonPressed(getKeyDownEndPoint)
+    }
+    
+    func testButtonPressedLeft()
+    {
+        let getKeyLeftEndPoint: String = "/keypress/Left"
+        testButtonPressed(getKeyLeftEndPoint)
+        
+    }
+    
+    func testButtonPressedRight()
+    {
+        let getKeyRightEndPoint: String = "/keypress/Right"
+        testButtonPressed(getKeyRightEndPoint)
+    }
+    
+    func testButtonPressedSelect()
+    {
+        let getKeySelectEndPoint: String = "/keypress/Select"
+        testButtonPressed(getKeySelectEndPoint)
+    }
+    
+    func testButtonPressedBack()
+    {
+        let getKeyBackEndPoint: String = "/keypress/Back"
+        testButtonPressed(getKeyBackEndPoint)
+    }
+    
+    func testButtonPressedHome()
+    {
+        let getKeyHomeEndPoint: String = "/keypress/Home"
+        testButtonPressed(getKeyHomeEndPoint)
+    }
+    
+    
+    func didReceiveXMLInfo(data: NSData)
+    {
+        let testString = NSString(data: data, encoding: NSUTF8StringEncoding)
+        print(testString)
+        XCTAssert(testString == "testData")
+        expectation?.fulfill()
+    }
+    
+    func didReceiveResponse(data: NSData)
+    {
+        let testString = NSString(data: data, encoding: NSUTF8StringEncoding)
+        print(testString)
+        XCTAssert(testString == "testData")
+        expectation?.fulfill()
     }
 
     func testPerformanceExample()

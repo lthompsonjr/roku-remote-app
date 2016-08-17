@@ -17,6 +17,8 @@
 		9F3633091D62043E006A2656 /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3633081D62043E006A2656 /* HttpHandler.swift */; };
 		9F36330A1D62043E006A2656 /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3633081D62043E006A2656 /* HttpHandler.swift */; };
 		9F36330C1D62049F006A2656 /* HttpHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36330B1D62049F006A2656 /* HttpHandlerTests.swift */; };
+		9F3633211D6318AF006A2656 /* ResponseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3633201D6318AF006A2656 /* ResponseDelegate.swift */; };
+		9F3633221D6318AF006A2656 /* ResponseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3633201D6318AF006A2656 /* ResponseDelegate.swift */; };
 		9F5DAEA91D61B3C600AA56DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */; };
 		9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */; };
 		9F5DAEAE1D61B3C600AA56DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5DAEAC1D61B3C600AA56DF /* Main.storyboard */; };
@@ -57,6 +59,7 @@
 		9E71CD0AB898282AF830F802 /* Pods-RokuRemoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuRemoteApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RokuRemoteApp/Pods-RokuRemoteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9F3633081D62043E006A2656 /* HttpHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHandler.swift; sourceTree = "<group>"; };
 		9F36330B1D62049F006A2656 /* HttpHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHandlerTests.swift; sourceTree = "<group>"; };
+		9F3633201D6318AF006A2656 /* ResponseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDelegate.swift; sourceTree = "<group>"; };
 		9F5DAEA51D61B3C600AA56DF /* RokuRemoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RokuRemoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F5DAEAA1D61B3C600AA56DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 				9F5DAEB71D61B3C600AA56DF /* Info.plist */,
 				9F5DAEAF1D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld */,
 				9F3633081D62043E006A2656 /* HttpHandler.swift */,
+				9F3633201D6318AF006A2656 /* ResponseDelegate.swift */,
 			);
 			path = RokuRemoteApp;
 			sourceTree = "<group>";
@@ -453,6 +457,7 @@
 				9F5DAEB11D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld in Sources */,
 				9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */,
 				4C41590F1D62197E0040A97B /* SocketConnectionProtocol.swift in Sources */,
+				9F3633211D6318AF006A2656 /* ResponseDelegate.swift in Sources */,
 				9F3633091D62043E006A2656 /* HttpHandler.swift in Sources */,
 				4C41590E1D62197E0040A97B /* SocketConnectionFactory.swift in Sources */,
 				4C4159101D62197E0040A97B /* UDPSocketConnection.swift in Sources */,
@@ -468,6 +473,7 @@
 				9F36330C1D62049F006A2656 /* HttpHandlerTests.swift in Sources */,
 				4C41591A1D621FCB0040A97B /* SocketConnectionTests.swift in Sources */,
 				9F5DAEC11D61B3C600AA56DF /* RokuRemoteAppTests.swift in Sources */,
+				9F3633221D6318AF006A2656 /* ResponseDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
