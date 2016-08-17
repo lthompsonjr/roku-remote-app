@@ -12,6 +12,8 @@ import CoreData
 
 class RokuDevice: NSManagedObject
 {
-
-
+    @NSManaged var deviceName: String?
+    @NSManaged var ipAddress: String?
+    @NSManaged var lastConnected: NSDate?
+    @NSManaged var serialNumber: String?
 }
