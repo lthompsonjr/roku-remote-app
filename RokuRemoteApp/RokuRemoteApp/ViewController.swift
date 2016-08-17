@@ -31,6 +31,8 @@ class ViewController: UIViewController {
 //        
 //        //Test
 //        var someObject = RokuDevice.insertRokuObjectInContext(moc,ipAddress: ipAddress, deviceName: deviceName, lastConnected: lastConnected, serialNumber: serielNumber) as! RokuDevice
+
+        
 //        let fetchRequest = NSFetchRequest(entityName:"RokuDevice")
 //        
 //        var fetchedObjects = try! moc.executeFetchRequest(fetchRequest) as! [RokuDevice]

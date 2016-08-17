@@ -19,4 +19,5 @@ extension RokuDevice {
     @NSManaged var lastConnected: NSDate?
     @NSManaged var serialNumber: String?
 
+    
 }

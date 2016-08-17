@@ -37,7 +37,7 @@ class MockNSManagedObjectContext: NSManagedObjectContext
     
     override func executeFetchRequest(request: NSFetchRequest) throws -> [AnyObject]
     {
-        return ["object 1"]
+        return storedDevices
     }
 
     override func insertObject(object: NSManagedObject)

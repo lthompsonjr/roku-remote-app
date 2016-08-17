@@ -12,12 +12,14 @@ import CoreData
 
 class DatabaseLayerTest: XCTestCase {
     
+    var mockManagedObjectContext: MockNSManagedObjectContext!
     
     override func setUp()
     {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
+        //Initialise the mock contect with private queue concurrency type to take it of the main thread
+        mockManagedObjectContext = MockNSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
+
     }
     
     override func tearDown() {
@@ -27,7 +29,23 @@ class DatabaseLayerTest: XCTestCase {
     
     func testGetRokuObject()
     {
+        //Setup
+        let moc = mockManagedObjectContext.setUpInMemoryManagedObjectContext() as! MockNSManagedObjectContext
+        let rokuDAO = RokuDeviceDAO(managedContext: moc)
         
+        //Insert Some Test Object in the Mock Context
+        let entity = NSEntityDescription.insertNewObjectForEntityForName("RokuDevice", inManagedObjectContext: moc)
+            as! RokuDevice
+        entity.deviceName = "Test Name"
+        entity.ipAddress = "Test IP"
+        entity.lastConnected = NSDate()
+        entity.serialNumber = "ihdasuyig67g3873"
+        
+        //Test
+        let fetchedDevice = rokuDAO.getDevice()
+        
+        //Assert
+        XCTAssertEqual(entity, fetchedDevice)
         
     }
     
@@ -35,34 +53,26 @@ class DatabaseLayerTest: XCTestCase {
     {
     
         //Setup
+        let moc = mockManagedObjectContext.setUpInMemoryManagedObjectContext() as! MockNSManagedObjectContext
+        let rokuDAO = RokuDeviceDAO(managedContext: moc)
         
-        var mockManagedObjectContext: MockNSManagedObjectContext = MockNSManagedObjectContext()
-        var context = mockManagedObjectContext.setUpInMemoryManagedObjectContext()
-        
-        
-        //var moc = AppDelegate().managedObjectContext
-        
-        
-        let ipAddress = "crap"
-        let deviceName = "more crap"
-        let lastConnected = NSDate()
-        let serialNumber = "even more crap"
-       
+        // Create Entity
+        let entity = NSEntityDescription.entityForName("RokuDevice", inManagedObjectContext: moc)
+        // Initialize Record
+        let record = RokuDevice(entity: entity!, insertIntoManagedObjectContext: moc)
+        record.deviceName = "Test name"
+        record.serialNumber = "hkdagksgdahk"
+        record.ipAddress = "Test IP"
+        record.lastConnected = NSDate()
         
         //Test
-        var someObject = RokuDevice.insertRokuObjectInMockContext(context,ipAddress: ipAddress, deviceName: deviceName, lastConnected: lastConnected, serialNumber: serialNumber) as! RokuDevice
-        //let fetchRequest = NSFetchRequest(entityName:"RokuDevice")
-       
-        //var fetchedObjects = try! moc.executeFetchRequest(fetchRequest) as! [RokuDevice]
-        print("Original" + someObject.deviceName!)
-       // print("The count" + (context.storedDevices.count))
-        print("Mocked save" + ((context as! MockNSManagedObjectContext).storedDevices.first as! RokuDevice).deviceName!)
+        rokuDAO.saveDevice(record)
         
-      
         //Assert
-        XCTAssertEqual(someObject, (context as! MockNSManagedObjectContext).storedDevices.first)
+        XCTAssertEqual(record, moc.storedDevices.first)
         
     }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
