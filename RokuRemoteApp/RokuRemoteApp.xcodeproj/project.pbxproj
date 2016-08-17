@@ -10,7 +10,6 @@
 		2D3EB26A9B8A2C11BC1766D5 /* Pods_RokuRemoteAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444E77D3830DC7D9B36B3C29 /* Pods_RokuRemoteAppUITests.framework */; };
 		2F0DC04C1D63174D0015B417 /* DatabaseLayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DC04B1D63174D0015B417 /* DatabaseLayerTest.swift */; };
 		2F0DC0501D631FB00015B417 /* MockNSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DC04F1D631FB00015B417 /* MockNSManagedObjectContext.swift */; };
-		2FE4818E1D6326E000C21AD9 /* RokuDevice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4818C1D6326E000C21AD9 /* RokuDevice+CoreDataProperties.swift */; };
 		2FE481901D6326E000C21AD9 /* RokuDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4818D1D6326E000C21AD9 /* RokuDevice.swift */; };
 		2FE481921D63601000C21AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */; };
 		2FE481AA1D649E3300C21AD9 /* ResponseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE481A41D649E3300C21AD9 /* ResponseDelegate.swift */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		2F0DC04B1D63174D0015B417 /* DatabaseLayerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseLayerTest.swift; path = ../DatabaseLayerTest.swift; sourceTree = "<group>"; };
 		2F0DC04F1D631FB00015B417 /* MockNSManagedObjectContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNSManagedObjectContext.swift; sourceTree = "<group>"; };
-		2FE4818C1D6326E000C21AD9 /* RokuDevice+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RokuDevice+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2FE4818D1D6326E000C21AD9 /* RokuDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RokuDevice.swift; sourceTree = "<group>"; };
 		2FE481A41D649E3300C21AD9 /* ResponseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDelegate.swift; sourceTree = "<group>"; };
 		2FE481A51D649E3300C21AD9 /* SocketFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketFactory.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				2FE481A41D649E3300C21AD9 /* ResponseDelegate.swift */,
 				2FE481A51D649E3300C21AD9 /* SocketFactory.swift */,
 				2FE481A61D649E3300C21AD9 /* UDPSocket.swift */,
-				2FE4818C1D6326E000C21AD9 /* RokuDevice+CoreDataProperties.swift */,
 				2FE4818D1D6326E000C21AD9 /* RokuDevice.swift */,
 				4C41590C1D62197E0040A97B /* SocketConnectionProtocol.swift */,
 				9F5DAEA81D61B3C600AA56DF /* AppDelegate.swift */,
@@ -472,7 +469,6 @@
 				2FE481901D6326E000C21AD9 /* RokuDevice.swift in Sources */,
 				9F5DAEB11D61B3C600AA56DF /* RokuRemoteApp.xcdatamodeld in Sources */,
 				9F5DAEAB1D61B3C600AA56DF /* ViewController.swift in Sources */,
-				2FE4818E1D6326E000C21AD9 /* RokuDevice+CoreDataProperties.swift in Sources */,
 				4C41590F1D62197E0040A97B /* SocketConnectionProtocol.swift in Sources */,
 				2FE481AB1D649E3300C21AD9 /* SocketFactory.swift in Sources */,
 				2FE481AC1D649E3300C21AD9 /* UDPSocket.swift in Sources */,
