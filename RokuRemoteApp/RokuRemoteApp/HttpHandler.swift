@@ -34,11 +34,11 @@ public class HttpHandler
     }
     
     /*
-    callGetInfoEndPoint
-       Calls the ROKU endpoint that retrieves the ROKU device information in NSData format
-       If the request is succesful it calls didReceiveXMLInfo passing an NSData containing the device info
+        getDeviceInfo
+        Calls the ROKU endpoint that retrieves the ROKU device information in NSData format
+        If the request is succesful it calls didReceiveXMLInfo passing an NSData containing the device info
     */
-    public func callGetInfoEndPoint(delegate: ResponseDelegate)
+    public func getDeviceInfo(delegate: ResponseDelegate)
     {
         let tempUrl = self.url + self.deviceInfoPath
         print(url)
@@ -53,6 +53,7 @@ public class HttpHandler
             // Check that data is not nil
             if let responseData = data
             {
+                // Pass the data in the response to the delegate.
                 delegate.didReceiveXMLInfo(data!)
             }
         })
@@ -61,11 +62,11 @@ public class HttpHandler
     }
     
     /*
-     callButtonPressedEndPoint
+        buttonPressed
         Calls the ROKU endpoint that parses the http request into a ROKU command.
         If the request is successful it calls didReceiveResponse method passing an NSData containing 200 OK
      */
-    public func callButtonPressedEndPoint(operation: String, delegate: ResponseDelegate)
+    public func buttonPressed(operation: String, delegate: ResponseDelegate)
     {
         let tempUrl = self.url + operation
         print(url)

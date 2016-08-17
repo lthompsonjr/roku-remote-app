@@ -8,9 +8,14 @@
 
 import Foundation
 
+/*  Response Delegate used to handle HTTP responses.
+    The completion handler of an http request will call the didReceiveResponse
+    function and pass it the data in the response.
+ */
 public protocol ResponseDelegate
 {
     func didReceiveResponse(data: NSData)
     
+    // Used for the getDeviceInfo function, which will return an XML with the info.
     func didReceiveXMLInfo(data: NSData)
 }

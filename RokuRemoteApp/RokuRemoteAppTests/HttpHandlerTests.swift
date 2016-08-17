@@ -31,15 +31,15 @@ class HttpHandlerTests: XCTestCase, ResponseDelegate
     
     func testGetDeviceInfo()
     {
-        let myString = "testData"
-        let myNSString = myString as NSString
-        let myNSData = myNSString.dataUsingEncoding(NSUTF8StringEncoding)!
+        let testString = "testData"
+        let testNSString = testString as NSString
+        let testNSData = testNSString.dataUsingEncoding(NSUTF8StringEncoding)!
         
         // Create stub of http response for getDeviceInfo()
         stub(isMethodGET() && isPath("/query/device-info"))
         { _ in
             return OHHTTPStubsResponse(
-                data: myNSData,
+                data: testNSData,
                 statusCode: 200,
                 headers: .None
             )
@@ -47,7 +47,7 @@ class HttpHandlerTests: XCTestCase, ResponseDelegate
         
         expectation = self.expectationWithDescription("asynchronous request")
         
-        handler.callGetInfoEndPoint(self)
+        handler.getDeviceInfo(self)
         
         self.waitForExpectationsWithTimeout(10, handler: .None)
     }
@@ -71,7 +71,7 @@ class HttpHandlerTests: XCTestCase, ResponseDelegate
         
         expectation = self.expectationWithDescription("asynchronous request")
         
-        handler.callButtonPressedEndPoint(buttonPressed, delegate: self)
+        handler.buttonPressed(buttonPressed, delegate: self)
         
         self.waitForExpectationsWithTimeout(10, handler: .None)
     }
