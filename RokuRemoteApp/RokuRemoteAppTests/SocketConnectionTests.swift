@@ -23,6 +23,7 @@ class SocketConnectionTests: XCTestCase {
     {
         let udpSocket = socketFactory.getUdpSocket()
         udpSocket.openConnection()
+        udpSocket.
         XCTAssertTrue(udpSocket.isConnectionOpen())
         udpSocket.closeConnection();
     }
